@@ -1,0 +1,52 @@
+Running main() from gtest_main.cc
+[==========] Running 8 tests from 4 test cases.
+[----------] Global test environment set-up.
+[----------] 2 tests from TestDeque/0, where TypeParam = std::__1::deque<int, std::__1::allocator<int> >
+[ RUN      ] TestDeque/0.Empty
+[       OK ] TestDeque/0.Empty (0 ms)
+[ RUN      ] TestDeque/0.Size
+[       OK ] TestDeque/0.Size (0 ms)
+[----------] 2 tests from TestDeque/0 (0 ms total)
+
+[----------] 2 tests from TestDeque/1, where TypeParam = std::__1::deque<double, std::__1::allocator<double> >
+[ RUN      ] TestDeque/1.Empty
+[       OK ] TestDeque/1.Empty (0 ms)
+[ RUN      ] TestDeque/1.Size
+[       OK ] TestDeque/1.Size (0 ms)
+[----------] 2 tests from TestDeque/1 (0 ms total)
+
+[----------] 2 tests from TestDeque/2, where TypeParam = my_deque<int, std::__1::allocator<int> >
+[ RUN      ] TestDeque/2.Empty
+[       OK ] TestDeque/2.Empty (0 ms)
+[ RUN      ] TestDeque/2.Size
+[       OK ] TestDeque/2.Size (0 ms)
+[----------] 2 tests from TestDeque/2 (0 ms total)
+
+[----------] 2 tests from TestDeque/3, where TypeParam = my_deque<double, std::__1::allocator<double> >
+[ RUN      ] TestDeque/3.Empty
+[       OK ] TestDeque/3.Empty (0 ms)
+[ RUN      ] TestDeque/3.Size
+[       OK ] TestDeque/3.Size (0 ms)
+[----------] 2 tests from TestDeque/3 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 8 tests from 4 test cases ran. (0 ms total)
+[  PASSED  ] 8 tests.
+
+
+
+File './Deque.h'
+Lines executed:100.00% of 7
+Branches executed:75.00% of 16
+Taken at least once:37.50% of 16
+No calls
+./Deque.h:creating 'Deque.h.gcov'
+
+
+
+File 'TestDeque.c++'
+Lines executed:100.00% of 9
+Branches executed:60.00% of 160
+Taken at least once:32.50% of 160
+No calls
+TestDeque.c++:creating 'TestDeque.c++.gcov'

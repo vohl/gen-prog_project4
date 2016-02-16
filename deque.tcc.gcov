@@ -1,0 +1,2091 @@
+        -:    0:Source:/usr/include/c++/4.7/bits/deque.tcc
+        -:    0:Graph:TestDeque.gcno
+        -:    0:Data:TestDeque.gcda
+        -:    0:Runs:3
+        -:    0:Programs:1
+        -:    1:// Deque implementation (out of line) -*- C++ -*-
+        -:    2:
+        -:    3:// Copyright (C) 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008,
+        -:    4:// 2009, 2010, 2011, 2012
+        -:    5:// Free Software Foundation, Inc.
+        -:    6://
+        -:    7:// This file is part of the GNU ISO C++ Library.  This library is free
+        -:    8:// software; you can redistribute it and/or modify it under the
+        -:    9:// terms of the GNU General Public License as published by the
+        -:   10:// Free Software Foundation; either version 3, or (at your option)
+        -:   11:// any later version.
+        -:   12:
+        -:   13:// This library is distributed in the hope that it will be useful,
+        -:   14:// but WITHOUT ANY WARRANTY; without even the implied warranty of
+        -:   15:// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+        -:   16:// GNU General Public License for more details.
+        -:   17:
+        -:   18:// Under Section 7 of GPL version 3, you are granted additional
+        -:   19:// permissions described in the GCC Runtime Library Exception, version
+        -:   20:// 3.1, as published by the Free Software Foundation.
+        -:   21:
+        -:   22:// You should have received a copy of the GNU General Public License and
+        -:   23:// a copy of the GCC Runtime Library Exception along with this program;
+        -:   24:// see the files COPYING3 and COPYING.RUNTIME respectively.  If not, see
+        -:   25:// <http://www.gnu.org/licenses/>.
+        -:   26:
+        -:   27:/*
+        -:   28: *
+        -:   29: * Copyright (c) 1994
+        -:   30: * Hewlett-Packard Company
+        -:   31: *
+        -:   32: * Permission to use, copy, modify, distribute and sell this software
+        -:   33: * and its documentation for any purpose is hereby granted without fee,
+        -:   34: * provided that the above copyright notice appear in all copies and
+        -:   35: * that both that copyright notice and this permission notice appear
+        -:   36: * in supporting documentation.  Hewlett-Packard Company makes no
+        -:   37: * representations about the suitability of this software for any
+        -:   38: * purpose.  It is provided "as is" without express or implied warranty.
+        -:   39: *
+        -:   40: *
+        -:   41: * Copyright (c) 1997
+        -:   42: * Silicon Graphics Computer Systems, Inc.
+        -:   43: *
+        -:   44: * Permission to use, copy, modify, distribute and sell this software
+        -:   45: * and its documentation for any purpose is hereby granted without fee,
+        -:   46: * provided that the above copyright notice appear in all copies and
+        -:   47: * that both that copyright notice and this permission notice appear
+        -:   48: * in supporting documentation.  Silicon Graphics makes no
+        -:   49: * representations about the suitability of this software for any
+        -:   50: * purpose.  It is provided "as is" without express or implied warranty.
+        -:   51: */
+        -:   52:
+        -:   53:/** @file bits/deque.tcc
+        -:   54: *  This is an internal header file, included by other library headers.
+        -:   55: *  Do not attempt to use it directly. @headername{deque}
+        -:   56: */
+        -:   57:
+        -:   58:#ifndef _DEQUE_TCC
+        -:   59:#define _DEQUE_TCC 1
+        -:   60:
+        -:   61:namespace std _GLIBCXX_VISIBILITY(default)
+        -:   62:{
+        -:   63:_GLIBCXX_BEGIN_NAMESPACE_CONTAINER
+        -:   64:
+        -:   65:#ifdef __GXX_EXPERIMENTAL_CXX0X__
+        -:   66:  template <typename _Tp, typename _Alloc>
+        -:   67:    void
+function _ZNSt5dequeIiSaIiEE21_M_default_initializeEv called 159 returned 100% blocks executed 25%
+function _ZNSt5dequeIdSaIdEE21_M_default_initializeEv called 159 returned 100% blocks executed 45%
+      318:   68:    deque<_Tp, _Alloc>::
+        -:   69:    _M_default_initialize()
+        -:   70:    {
+        -:   71:      _Map_pointer __cur;
+        -:   72:      __try
+        -:   73:        {
+      336:   74:          for (__cur = this->_M_impl._M_start._M_node;
+branch  0 taken 0%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 10%
+branch  3 taken 90% (fallthrough)
+        -:   75:	       __cur < this->_M_impl._M_finish._M_node;
+        -:   76:	       ++__cur)
+       18:   77:            std::__uninitialized_default_a(*__cur, *__cur + _S_buffer_size(),
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+call    4 never executed
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 100% (fallthrough)
+branch  8 taken 0% (throw)
+call    9 returned 100%
+        -:   78:					   _M_get_Tp_allocator());
+      318:   79:          std::__uninitialized_default_a(this->_M_impl._M_finish._M_first,
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+call    3 returned 100%
+call    4 returned 100%
+branch  5 taken 100% (fallthrough)
+branch  6 taken 0% (throw)
+call    7 returned 100%
+        -:   80:					 this->_M_impl._M_finish._M_cur,
+        -:   81:					 _M_get_Tp_allocator());
+        -:   82:        }
+    =====:   83:      __catch(...)
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+call    4 never executed
+call    5 never executed
+        -:   84:        {
+    =====:   85:          std::_Destroy(this->_M_impl._M_start, iterator(*__cur, __cur),
+call    0 never executed
+call    1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+call    5 never executed
+call    6 never executed
+call    7 never executed
+call    8 never executed
+branch  9 never executed
+branch 10 never executed
+call   11 never executed
+        -:   86:			_M_get_Tp_allocator());
+    =====:   87:          __throw_exception_again;
+call    0 never executed
+call    1 never executed
+        -:   88:        }
+      318:   89:    }
+        -:   90:#endif
+        -:   91:
+        -:   92:  template <typename _Tp, typename _Alloc>
+        -:   93:    deque<_Tp, _Alloc>&
+function _ZNSt5dequeIiSaIiEEaSERKS1_ called 12 returned 100% blocks executed 78%
+function _ZNSt5dequeIdSaIdEEaSERKS1_ called 12 returned 100% blocks executed 78%
+       24:   94:    deque<_Tp, _Alloc>::
+        -:   95:    operator=(const deque& __x)
+        -:   96:    {
+       24:   97:      const size_type __len = size();
+call    0 returned 100%
+call    1 returned 100%
+       24:   98:      if (&__x != this)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0%
+        -:   99:	{
+       24:  100:	  if (__len >= __x.size())
+call    0 returned 100%
+branch  1 taken 50% (fallthrough)
+branch  2 taken 50%
+call    3 returned 100%
+branch  4 taken 50% (fallthrough)
+branch  5 taken 50%
+       12:  101:	    _M_erase_at_end(std::copy(__x.begin(), __x.end(),
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+branch  3 taken 100% (fallthrough)
+branch  4 taken 0% (throw)
+call    5 returned 100%
+branch  6 taken 100% (fallthrough)
+branch  7 taken 0% (throw)
+call    8 returned 100%
+call    9 never executed
+call   10 returned 100%
+call   11 returned 100%
+call   12 returned 100%
+branch 13 taken 100% (fallthrough)
+branch 14 taken 0% (throw)
+call   15 returned 100%
+branch 16 taken 100% (fallthrough)
+branch 17 taken 0% (throw)
+call   18 returned 100%
+call   19 never executed
+        -:  102:				      this->_M_impl._M_start));
+        -:  103:	  else
+        -:  104:	    {
+       12:  105:	      const_iterator __mid = __x.begin() + difference_type(__len);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+call    3 returned 100%
+call    4 returned 100%
+branch  5 taken 100% (fallthrough)
+branch  6 taken 0% (throw)
+call    7 returned 100%
+       12:  106:	      std::copy(__x.begin(), __mid, this->_M_impl._M_start);
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0% (throw)
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 100% (fallthrough)
+branch  8 taken 0% (throw)
+call    9 returned 100%
+       12:  107:	      insert(this->_M_impl._M_finish, __mid, __x.end());
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0% (throw)
+call    4 returned 100%
+call    5 never executed
+call    6 returned 100%
+call    7 returned 100%
+branch  8 taken 100% (fallthrough)
+branch  9 taken 0% (throw)
+call   10 returned 100%
+call   11 never executed
+        -:  108:	    }
+        -:  109:	}
+       24:  110:      return *this;
+        -:  111:    }
+        -:  112:
+        -:  113:#ifdef __GXX_EXPERIMENTAL_CXX0X__
+        -:  114:  template<typename _Tp, typename _Alloc>
+        -:  115:    template<typename... _Args>
+        -:  116:      void
+function _ZNSt5dequeIiSaIiEE13emplace_frontIIiEEEvDpOT_ called 60 returned 100% blocks executed 100%
+function _ZNSt5dequeIdSaIdEE13emplace_frontIIdEEEvDpOT_ called 60 returned 100% blocks executed 100%
+      120:  117:      deque<_Tp, _Alloc>::
+        -:  118:      emplace_front(_Args&&... __args)
+        -:  119:      {
+      120:  120:	if (this->_M_impl._M_start._M_cur != this->_M_impl._M_start._M_first)
+branch  0 taken 35% (fallthrough)
+branch  1 taken 65%
+branch  2 taken 35% (fallthrough)
+branch  3 taken 65%
+        -:  121:	  {
+       42:  122:	    this->_M_impl.construct(this->_M_impl._M_start._M_cur - 1,
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+        -:  123:				    std::forward<_Args>(__args)...);
+       42:  124:	    --this->_M_impl._M_start._M_cur;
+        -:  125:	  }
+        -:  126:	else
+       78:  127:	  _M_push_front_aux(std::forward<_Args>(__args)...);
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+      120:  128:      }
+        -:  129:
+        -:  130:  template<typename _Tp, typename _Alloc>
+        -:  131:    template<typename... _Args>
+        -:  132:      void
+function _ZNSt5dequeIiSaIiEE12emplace_backIIiEEEvDpOT_ called 105 returned 100% blocks executed 71%
+function _ZNSt5dequeIdSaIdEE12emplace_backIIdEEEvDpOT_ called 105 returned 100% blocks executed 71%
+      210:  133:      deque<_Tp, _Alloc>::
+        -:  134:      emplace_back(_Args&&... __args)
+        -:  135:      {
+      210:  136:	if (this->_M_impl._M_finish._M_cur
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0%
+        -:  137:	    != this->_M_impl._M_finish._M_last - 1)
+        -:  138:	  {
+      210:  139:	    this->_M_impl.construct(this->_M_impl._M_finish._M_cur,
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+        -:  140:				    std::forward<_Args>(__args)...);
+      210:  141:	    ++this->_M_impl._M_finish._M_cur;
+        -:  142:	  }
+        -:  143:	else
+    #####:  144:	  _M_push_back_aux(std::forward<_Args>(__args)...);
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+      210:  145:      }
+        -:  146:#endif
+        -:  147:
+        -:  148:  template <typename _Tp, typename _Alloc>
+        -:  149:    typename deque<_Tp, _Alloc>::iterator
+        -:  150:    deque<_Tp, _Alloc>::
+        -:  151:    insert(iterator __position, const value_type& __x)
+        -:  152:    {
+        -:  153:      if (__position._M_cur == this->_M_impl._M_start._M_cur)
+        -:  154:	{
+        -:  155:	  push_front(__x);
+        -:  156:	  return this->_M_impl._M_start;
+        -:  157:	}
+        -:  158:      else if (__position._M_cur == this->_M_impl._M_finish._M_cur)
+        -:  159:	{
+        -:  160:	  push_back(__x);
+        -:  161:	  iterator __tmp = this->_M_impl._M_finish;
+        -:  162:	  --__tmp;
+        -:  163:	  return __tmp;
+        -:  164:	}
+        -:  165:      else
+        -:  166:        return _M_insert_aux(__position, __x);
+        -:  167:    }
+        -:  168:
+        -:  169:#ifdef __GXX_EXPERIMENTAL_CXX0X__
+        -:  170:  template<typename _Tp, typename _Alloc>
+        -:  171:    template<typename... _Args>
+        -:  172:      typename deque<_Tp, _Alloc>::iterator
+function _ZNSt5dequeIiSaIiEE7emplaceIIiEEESt15_Deque_iteratorIiRiPiES6_DpOT_ called 12 returned 100% blocks executed 89%
+function _ZNSt5dequeIdSaIdEE7emplaceIIdEEESt15_Deque_iteratorIdRdPdES6_DpOT_ called 12 returned 100% blocks executed 89%
+       24:  173:      deque<_Tp, _Alloc>::
+        -:  174:      emplace(iterator __position, _Args&&... __args)
+        -:  175:      {
+       24:  176:	if (__position._M_cur == this->_M_impl._M_start._M_cur)
+branch  0 taken 25% (fallthrough)
+branch  1 taken 75%
+branch  2 taken 25% (fallthrough)
+branch  3 taken 75%
+        -:  177:	  {
+        6:  178:	    emplace_front(std::forward<_Args>(__args)...);
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+        6:  179:	    return this->_M_impl._M_start;
+call    0 returned 100%
+call    1 returned 100%
+        -:  180:	  }
+       18:  181:	else if (__position._M_cur == this->_M_impl._M_finish._M_cur)
+branch  0 taken 33% (fallthrough)
+branch  1 taken 67%
+branch  2 taken 33% (fallthrough)
+branch  3 taken 67%
+        -:  182:	  {
+        6:  183:	    emplace_back(std::forward<_Args>(__args)...);
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+call    3 returned 100%
+call    4 returned 100%
+branch  5 taken 100% (fallthrough)
+branch  6 taken 0% (throw)
+call    7 returned 100%
+        6:  184:	    iterator __tmp = this->_M_impl._M_finish;
+call    0 returned 100%
+call    1 returned 100%
+        6:  185:	    --__tmp;
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0% (throw)
+call    2 returned 100%
+branch  3 taken 100% (fallthrough)
+branch  4 taken 0% (throw)
+call    5 returned 100%
+        6:  186:	    return __tmp;
+call    0 returned 100%
+call    1 returned 100%
+        -:  187:	  }
+        -:  188:	else
+       12:  189:	  return _M_insert_aux(__position, std::forward<_Args>(__args)...);
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0% (throw)
+call    4 returned 100%
+call    5 never executed
+call    6 never executed
+call    7 returned 100%
+call    8 returned 100%
+branch  9 taken 100% (fallthrough)
+branch 10 taken 0% (throw)
+call   11 returned 100%
+call   12 never executed
+call   13 never executed
+        -:  190:      }
+        -:  191:#endif
+        -:  192:
+        -:  193:  template <typename _Tp, typename _Alloc>
+        -:  194:    typename deque<_Tp, _Alloc>::iterator
+function _ZNSt5dequeIiSaIiEE5eraseESt15_Deque_iteratorIiRiPiE called 12 returned 100% blocks executed 64%
+function _ZNSt5dequeIdSaIdEE5eraseESt15_Deque_iteratorIdRdPdE called 12 returned 100% blocks executed 64%
+       24:  195:    deque<_Tp, _Alloc>::
+        -:  196:    erase(iterator __position)
+        -:  197:    {
+       24:  198:      iterator __next = __position;
+call    0 returned 100%
+call    1 returned 100%
+       24:  199:      ++__next;
+call    0 returned 100%
+call    1 returned 100%
+       24:  200:      const difference_type __index = __position - begin();
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+       24:  201:      if (static_cast<size_type>(__index) < (size() >> 1))
+call    0 returned 100%
+branch  1 taken 25% (fallthrough)
+branch  2 taken 75%
+call    3 returned 100%
+branch  4 taken 25% (fallthrough)
+branch  5 taken 75%
+        -:  202:	{
+        6:  203:	  if (__position != begin())
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 0% (fallthrough)
+branch  3 taken 100%
+call    4 returned 100%
+call    5 returned 100%
+branch  6 taken 0% (fallthrough)
+branch  7 taken 100%
+    #####:  204:	    _GLIBCXX_MOVE_BACKWARD3(begin(), __position, __next);
+call    0 never executed
+call    1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+call    5 never executed
+call    6 never executed
+call    7 never executed
+call    8 never executed
+branch  9 never executed
+branch 10 never executed
+call   11 never executed
+        6:  205:	  pop_front();
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0% (throw)
+call    2 returned 100%
+branch  3 taken 100% (fallthrough)
+branch  4 taken 0% (throw)
+call    5 returned 100%
+        -:  206:	}
+        -:  207:      else
+        -:  208:	{
+       18:  209:	  if (__next != end())
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 33% (fallthrough)
+branch  3 taken 67%
+call    4 returned 100%
+call    5 returned 100%
+branch  6 taken 33% (fallthrough)
+branch  7 taken 67%
+        6:  210:	    _GLIBCXX_MOVE3(__next, end(), __position);
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+branch  3 taken 100% (fallthrough)
+branch  4 taken 0% (throw)
+call    5 returned 100%
+call    6 returned 100%
+call    7 returned 100%
+call    8 returned 100%
+branch  9 taken 100% (fallthrough)
+branch 10 taken 0% (throw)
+call   11 returned 100%
+       18:  211:	  pop_back();
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0% (throw)
+call    2 returned 100%
+branch  3 taken 100% (fallthrough)
+branch  4 taken 0% (throw)
+call    5 returned 100%
+        -:  212:	}
+       24:  213:      return begin() + __index;
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+call    3 returned 100%
+call    4 never executed
+call    5 returned 100%
+branch  6 taken 100% (fallthrough)
+branch  7 taken 0% (throw)
+call    8 returned 100%
+call    9 never executed
+        -:  214:    }
+        -:  215:
+        -:  216:  template <typename _Tp, typename _Alloc>
+        -:  217:    typename deque<_Tp, _Alloc>::iterator
+        -:  218:    deque<_Tp, _Alloc>::
+        -:  219:    erase(iterator __first, iterator __last)
+        -:  220:    {
+        -:  221:      if (__first == __last)
+        -:  222:	return __first;
+        -:  223:      else if (__first == begin() && __last == end())
+        -:  224:	{
+        -:  225:	  clear();
+        -:  226:	  return end();
+        -:  227:	}
+        -:  228:      else
+        -:  229:	{
+        -:  230:	  const difference_type __n = __last - __first;
+        -:  231:	  const difference_type __elems_before = __first - begin();
+        -:  232:	  if (static_cast<size_type>(__elems_before) <= (size() - __n) / 2)
+        -:  233:	    {
+        -:  234:	      if (__first != begin())
+        -:  235:		_GLIBCXX_MOVE_BACKWARD3(begin(), __first, __last);
+        -:  236:	      _M_erase_at_begin(begin() + __n);
+        -:  237:	    }
+        -:  238:	  else
+        -:  239:	    {
+        -:  240:	      if (__last != end())
+        -:  241:		_GLIBCXX_MOVE3(__last, end(), __first);
+        -:  242:	      _M_erase_at_end(end() - __n);
+        -:  243:	    }
+        -:  244:	  return begin() + __elems_before;
+        -:  245:	}
+        -:  246:    }
+        -:  247:
+        -:  248:  template <typename _Tp, class _Alloc>
+        -:  249:    template <typename _InputIterator>
+        -:  250:      void
+        -:  251:      deque<_Tp, _Alloc>::
+        -:  252:      _M_assign_aux(_InputIterator __first, _InputIterator __last,
+        -:  253:		    std::input_iterator_tag)
+        -:  254:      {
+        -:  255:        iterator __cur = begin();
+        -:  256:        for (; __first != __last && __cur != end(); ++__cur, ++__first)
+        -:  257:          *__cur = *__first;
+        -:  258:        if (__first == __last)
+        -:  259:          _M_erase_at_end(__cur);
+        -:  260:        else
+        -:  261:          insert(end(), __first, __last);
+        -:  262:      }
+        -:  263:
+        -:  264:  template <typename _Tp, typename _Alloc>
+        -:  265:    void
+        -:  266:    deque<_Tp, _Alloc>::
+        -:  267:    _M_fill_insert(iterator __pos, size_type __n, const value_type& __x)
+        -:  268:    {
+        -:  269:      if (__pos._M_cur == this->_M_impl._M_start._M_cur)
+        -:  270:	{
+        -:  271:	  iterator __new_start = _M_reserve_elements_at_front(__n);
+        -:  272:	  __try
+        -:  273:	    {
+        -:  274:	      std::__uninitialized_fill_a(__new_start, this->_M_impl._M_start,
+        -:  275:					  __x, _M_get_Tp_allocator());
+        -:  276:	      this->_M_impl._M_start = __new_start;
+        -:  277:	    }
+        -:  278:	  __catch(...)
+        -:  279:	    {
+        -:  280:	      _M_destroy_nodes(__new_start._M_node,
+        -:  281:			       this->_M_impl._M_start._M_node);
+        -:  282:	      __throw_exception_again;
+        -:  283:	    }
+        -:  284:	}
+        -:  285:      else if (__pos._M_cur == this->_M_impl._M_finish._M_cur)
+        -:  286:	{
+        -:  287:	  iterator __new_finish = _M_reserve_elements_at_back(__n);
+        -:  288:	  __try
+        -:  289:	    {
+        -:  290:	      std::__uninitialized_fill_a(this->_M_impl._M_finish,
+        -:  291:					  __new_finish, __x,
+        -:  292:					  _M_get_Tp_allocator());
+        -:  293:	      this->_M_impl._M_finish = __new_finish;
+        -:  294:	    }
+        -:  295:	  __catch(...)
+        -:  296:	    {
+        -:  297:	      _M_destroy_nodes(this->_M_impl._M_finish._M_node + 1,
+        -:  298:			       __new_finish._M_node + 1);
+        -:  299:	      __throw_exception_again;
+        -:  300:	    }
+        -:  301:	}
+        -:  302:      else
+        -:  303:        _M_insert_aux(__pos, __n, __x);
+        -:  304:    }
+        -:  305:
+        -:  306:#ifdef __GXX_EXPERIMENTAL_CXX0X__
+        -:  307:  template <typename _Tp, typename _Alloc>
+        -:  308:    void
+function _ZNSt5dequeIiSaIiEE17_M_default_appendEm called 9 returned 100% blocks executed 47%
+function _ZNSt5dequeIdSaIdEE17_M_default_appendEm called 9 returned 100% blocks executed 47%
+       18:  309:    deque<_Tp, _Alloc>::
+        -:  310:    _M_default_append(size_type __n)
+        -:  311:    {
+       18:  312:      if (__n)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0%
+        -:  313:	{
+       18:  314:	  iterator __new_finish = _M_reserve_elements_at_back(__n);
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0% (throw)
+call    2 returned 100%
+branch  3 taken 100% (fallthrough)
+branch  4 taken 0% (throw)
+call    5 returned 100%
+        -:  315:	  __try
+        -:  316:	    {
+       18:  317:	      std::__uninitialized_default_a(this->_M_impl._M_finish,
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+branch  3 taken 100% (fallthrough)
+branch  4 taken 0% (throw)
+call    5 returned 100%
+call    6 returned 100%
+call    7 returned 100%
+call    8 returned 100%
+branch  9 taken 100% (fallthrough)
+branch 10 taken 0% (throw)
+call   11 returned 100%
+        -:  318:					     __new_finish,
+        -:  319:					     _M_get_Tp_allocator());
+       18:  320:	      this->_M_impl._M_finish = __new_finish;
+        -:  321:	    }
+    =====:  322:	  __catch(...)
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+        -:  323:	    {
+    =====:  324:	      _M_destroy_nodes(this->_M_impl._M_finish._M_node + 1,
+branch  0 never executed
+branch  1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+call    5 never executed
+        -:  325:			       __new_finish._M_node + 1);
+    =====:  326:	      __throw_exception_again;
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+        -:  327:	    }
+        -:  328:	}
+       18:  329:    }
+        -:  330:
+        -:  331:  template <typename _Tp, typename _Alloc>
+        -:  332:    bool
+        -:  333:    deque<_Tp, _Alloc>::
+        -:  334:    _M_shrink_to_fit()
+        -:  335:    {
+        -:  336:      const difference_type __front_capacity
+        -:  337:	= (this->_M_impl._M_start._M_cur - this->_M_impl._M_start._M_first);
+        -:  338:      if (__front_capacity == 0)
+        -:  339:	return false;
+        -:  340:
+        -:  341:      const difference_type __back_capacity
+        -:  342:	= (this->_M_impl._M_finish._M_last - this->_M_impl._M_finish._M_cur);
+        -:  343:      if (__front_capacity + __back_capacity < _S_buffer_size())
+        -:  344:	return false;
+        -:  345:
+        -:  346:      return std::__shrink_to_fit_aux<deque>::_S_do_it(*this);
+        -:  347:    }
+        -:  348:#endif
+        -:  349:
+        -:  350:  template <typename _Tp, typename _Alloc>
+        -:  351:    void
+function _ZNSt5dequeIiSaIiEE18_M_fill_initializeERKi called 267 returned 100% blocks executed 25%
+function _ZNSt5dequeIdSaIdEE18_M_fill_initializeERKd called 267 returned 100% blocks executed 25%
+      534:  352:    deque<_Tp, _Alloc>::
+        -:  353:    _M_fill_initialize(const value_type& __value)
+        -:  354:    {
+        -:  355:      _Map_pointer __cur;
+        -:  356:      __try
+        -:  357:        {
+      534:  358:          for (__cur = this->_M_impl._M_start._M_node;
+branch  0 taken 0%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0%
+branch  3 taken 100% (fallthrough)
+        -:  359:	       __cur < this->_M_impl._M_finish._M_node;
+        -:  360:	       ++__cur)
+    #####:  361:            std::__uninitialized_fill_a(*__cur, *__cur + _S_buffer_size(),
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+call    4 never executed
+call    5 never executed
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+call    9 never executed
+        -:  362:					__value, _M_get_Tp_allocator());
+      534:  363:          std::__uninitialized_fill_a(this->_M_impl._M_finish._M_first,
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0% (throw)
+call    3 returned 100%
+call    4 returned 100%
+branch  5 taken 100% (fallthrough)
+branch  6 taken 0% (throw)
+call    7 returned 100%
+        -:  364:				      this->_M_impl._M_finish._M_cur,
+        -:  365:				      __value, _M_get_Tp_allocator());
+        -:  366:        }
+    =====:  367:      __catch(...)
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+call    4 never executed
+call    5 never executed
+        -:  368:        {
+    =====:  369:          std::_Destroy(this->_M_impl._M_start, iterator(*__cur, __cur),
+call    0 never executed
+call    1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+call    5 never executed
+call    6 never executed
+call    7 never executed
+call    8 never executed
+branch  9 never executed
+branch 10 never executed
+call   11 never executed
+        -:  370:			_M_get_Tp_allocator());
+    =====:  371:          __throw_exception_again;
+call    0 never executed
+call    1 never executed
+        -:  372:        }
+      534:  373:    }
+        -:  374:
+        -:  375:  template <typename _Tp, typename _Alloc>
+        -:  376:    template <typename _InputIterator>
+        -:  377:      void
+        -:  378:      deque<_Tp, _Alloc>::
+        -:  379:      _M_range_initialize(_InputIterator __first, _InputIterator __last,
+        -:  380:                          std::input_iterator_tag)
+        -:  381:      {
+        -:  382:        this->_M_initialize_map(0);
+        -:  383:        __try
+        -:  384:          {
+        -:  385:            for (; __first != __last; ++__first)
+        -:  386:              push_back(*__first);
+        -:  387:          }
+        -:  388:        __catch(...)
+        -:  389:          {
+        -:  390:            clear();
+        -:  391:            __throw_exception_again;
+        -:  392:          }
+        -:  393:      }
+        -:  394:
+        -:  395:  template <typename _Tp, typename _Alloc>
+        -:  396:    template <typename _ForwardIterator>
+        -:  397:      void
+        -:  398:      deque<_Tp, _Alloc>::
+        -:  399:      _M_range_initialize(_ForwardIterator __first, _ForwardIterator __last,
+        -:  400:                          std::forward_iterator_tag)
+        -:  401:      {
+        -:  402:        const size_type __n = std::distance(__first, __last);
+        -:  403:        this->_M_initialize_map(__n);
+        -:  404:
+        -:  405:        _Map_pointer __cur_node;
+        -:  406:        __try
+        -:  407:          {
+        -:  408:            for (__cur_node = this->_M_impl._M_start._M_node;
+        -:  409:                 __cur_node < this->_M_impl._M_finish._M_node;
+        -:  410:                 ++__cur_node)
+        -:  411:	      {
+        -:  412:		_ForwardIterator __mid = __first;
+        -:  413:		std::advance(__mid, _S_buffer_size());
+        -:  414:		std::__uninitialized_copy_a(__first, __mid, *__cur_node,
+        -:  415:					    _M_get_Tp_allocator());
+        -:  416:		__first = __mid;
+        -:  417:	      }
+        -:  418:            std::__uninitialized_copy_a(__first, __last,
+        -:  419:					this->_M_impl._M_finish._M_first,
+        -:  420:					_M_get_Tp_allocator());
+        -:  421:          }
+        -:  422:        __catch(...)
+        -:  423:          {
+        -:  424:            std::_Destroy(this->_M_impl._M_start,
+        -:  425:			  iterator(*__cur_node, __cur_node),
+        -:  426:			  _M_get_Tp_allocator());
+        -:  427:            __throw_exception_again;
+        -:  428:          }
+        -:  429:      }
+        -:  430:
+        -:  431:  // Called only if _M_impl._M_finish._M_cur == _M_impl._M_finish._M_last - 1.
+        -:  432:  template<typename _Tp, typename _Alloc>
+        -:  433:#ifdef __GXX_EXPERIMENTAL_CXX0X__
+        -:  434:    template<typename... _Args>
+        -:  435:      void
+function _ZNSt5dequeIiSaIiEE16_M_push_back_auxIIiEEEvDpOT_ called 0 returned 0% blocks executed 0%
+function _ZNSt5dequeIdSaIdEE16_M_push_back_auxIIdEEEvDpOT_ called 0 returned 0% blocks executed 0%
+    #####:  436:      deque<_Tp, _Alloc>::
+        -:  437:      _M_push_back_aux(_Args&&... __args)
+        -:  438:#else
+        -:  439:      void
+        -:  440:      deque<_Tp, _Alloc>::
+        -:  441:      _M_push_back_aux(const value_type& __t)
+        -:  442:#endif
+        -:  443:      {
+    #####:  444:	_M_reserve_map_at_back();
+call    0 never executed
+call    1 never executed
+    #####:  445:	*(this->_M_impl._M_finish._M_node + 1) = this->_M_allocate_node();
+call    0 never executed
+call    1 never executed
+        -:  446:	__try
+        -:  447:	  {
+        -:  448:#ifdef __GXX_EXPERIMENTAL_CXX0X__
+    #####:  449:	    this->_M_impl.construct(this->_M_impl._M_finish._M_cur,
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+        -:  450:				    std::forward<_Args>(__args)...);
+        -:  451:#else
+        -:  452:	    this->_M_impl.construct(this->_M_impl._M_finish._M_cur, __t);
+        -:  453:#endif
+    #####:  454:	    this->_M_impl._M_finish._M_set_node(this->_M_impl._M_finish._M_node
+call    0 never executed
+call    1 never executed
+        -:  455:						+ 1);
+    #####:  456:	    this->_M_impl._M_finish._M_cur = this->_M_impl._M_finish._M_first;
+        -:  457:	  }
+        -:  458:	__catch(...)
+        -:  459:	  {
+        -:  460:	    _M_deallocate_node(*(this->_M_impl._M_finish._M_node + 1));
+        -:  461:	    __throw_exception_again;
+        -:  462:	  }
+    #####:  463:      }
+        -:  464:
+        -:  465:  // Called only if _M_impl._M_start._M_cur == _M_impl._M_start._M_first.
+        -:  466:  template<typename _Tp, typename _Alloc>
+        -:  467:#ifdef __GXX_EXPERIMENTAL_CXX0X__
+        -:  468:    template<typename... _Args>
+        -:  469:      void
+function _ZNSt5dequeIiSaIiEE17_M_push_front_auxIIiEEEvDpOT_ called 39 returned 100% blocks executed 100%
+function _ZNSt5dequeIdSaIdEE17_M_push_front_auxIIdEEEvDpOT_ called 39 returned 100% blocks executed 100%
+       78:  470:      deque<_Tp, _Alloc>::
+        -:  471:      _M_push_front_aux(_Args&&... __args)
+        -:  472:#else
+        -:  473:      void
+        -:  474:      deque<_Tp, _Alloc>::
+        -:  475:      _M_push_front_aux(const value_type& __t)
+        -:  476:#endif
+        -:  477:      {
+       78:  478:	_M_reserve_map_at_front();
+call    0 returned 100%
+call    1 returned 100%
+       78:  479:	*(this->_M_impl._M_start._M_node - 1) = this->_M_allocate_node();
+call    0 returned 100%
+call    1 returned 100%
+        -:  480:	__try
+        -:  481:	  {
+       78:  482:	    this->_M_impl._M_start._M_set_node(this->_M_impl._M_start._M_node
+call    0 returned 100%
+call    1 returned 100%
+        -:  483:					       - 1);
+       78:  484:	    this->_M_impl._M_start._M_cur = this->_M_impl._M_start._M_last - 1;
+        -:  485:#ifdef __GXX_EXPERIMENTAL_CXX0X__
+       78:  486:	    this->_M_impl.construct(this->_M_impl._M_start._M_cur,
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+        -:  487:				    std::forward<_Args>(__args)...);
+        -:  488:#else
+        -:  489:	    this->_M_impl.construct(this->_M_impl._M_start._M_cur, __t);
+        -:  490:#endif
+        -:  491:	  }
+        -:  492:	__catch(...)
+        -:  493:	  {
+        -:  494:	    ++this->_M_impl._M_start;
+        -:  495:	    _M_deallocate_node(*(this->_M_impl._M_start._M_node - 1));
+        -:  496:	    __throw_exception_again;
+        -:  497:	  }
+       78:  498:      }
+        -:  499:
+        -:  500:  // Called only if _M_impl._M_finish._M_cur == _M_impl._M_finish._M_first.
+        -:  501:  template <typename _Tp, typename _Alloc>
+function _ZNSt5dequeIiSaIiEE15_M_pop_back_auxEv called 0 returned 0% blocks executed 0%
+function _ZNSt5dequeIdSaIdEE15_M_pop_back_auxEv called 0 returned 0% blocks executed 0%
+    #####:  502:    void deque<_Tp, _Alloc>::
+        -:  503:    _M_pop_back_aux()
+        -:  504:    {
+    #####:  505:      _M_deallocate_node(this->_M_impl._M_finish._M_first);
+call    0 never executed
+call    1 never executed
+    #####:  506:      this->_M_impl._M_finish._M_set_node(this->_M_impl._M_finish._M_node - 1);
+call    0 never executed
+call    1 never executed
+    #####:  507:      this->_M_impl._M_finish._M_cur = this->_M_impl._M_finish._M_last - 1;
+    #####:  508:      this->_M_impl.destroy(this->_M_impl._M_finish._M_cur);
+call    0 never executed
+call    1 never executed
+    #####:  509:    }
+        -:  510:
+        -:  511:  // Called only if _M_impl._M_start._M_cur == _M_impl._M_start._M_last - 1.
+        -:  512:  // Note that if the deque has at least one element (a precondition for this
+        -:  513:  // member function), and if
+        -:  514:  //   _M_impl._M_start._M_cur == _M_impl._M_start._M_last,
+        -:  515:  // then the deque must have at least two nodes.
+        -:  516:  template <typename _Tp, typename _Alloc>
+function _ZNSt5dequeIiSaIiEE16_M_pop_front_auxEv called 3 returned 100% blocks executed 100%
+function _ZNSt5dequeIdSaIdEE16_M_pop_front_auxEv called 3 returned 100% blocks executed 100%
+        6:  517:    void deque<_Tp, _Alloc>::
+        -:  518:    _M_pop_front_aux()
+        -:  519:    {
+        6:  520:      this->_M_impl.destroy(this->_M_impl._M_start._M_cur);
+call    0 returned 100%
+call    1 returned 100%
+        6:  521:      _M_deallocate_node(this->_M_impl._M_start._M_first);
+call    0 returned 100%
+call    1 returned 100%
+        6:  522:      this->_M_impl._M_start._M_set_node(this->_M_impl._M_start._M_node + 1);
+call    0 returned 100%
+call    1 returned 100%
+        6:  523:      this->_M_impl._M_start._M_cur = this->_M_impl._M_start._M_first;
+        6:  524:    }
+        -:  525:
+        -:  526:  template <typename _Tp, typename _Alloc>
+        -:  527:    template <typename _InputIterator>
+        -:  528:      void
+        -:  529:      deque<_Tp, _Alloc>::
+        -:  530:      _M_range_insert_aux(iterator __pos,
+        -:  531:                          _InputIterator __first, _InputIterator __last,
+        -:  532:                          std::input_iterator_tag)
+        -:  533:      { std::copy(__first, __last, std::inserter(*this, __pos)); }
+        -:  534:
+        -:  535:  template <typename _Tp, typename _Alloc>
+        -:  536:    template <typename _ForwardIterator>
+        -:  537:      void
+function _ZNSt5dequeIiSaIiEE19_M_range_insert_auxISt15_Deque_iteratorIiRKiPS4_EEEvS3_IiRiPiET_SB_St20forward_iterator_tag called 6 returned 100% blocks executed 41%
+function _ZNSt5dequeIdSaIdEE19_M_range_insert_auxISt15_Deque_iteratorIdRKdPS4_EEEvS3_IdRdPdET_SB_St20forward_iterator_tag called 6 returned 100% blocks executed 41%
+       12:  538:      deque<_Tp, _Alloc>::
+        -:  539:      _M_range_insert_aux(iterator __pos,
+        -:  540:                          _ForwardIterator __first, _ForwardIterator __last,
+        -:  541:                          std::forward_iterator_tag)
+        -:  542:      {
+       12:  543:        const size_type __n = std::distance(__first, __last);
+call    0 returned 100%
+call    1 returned 100%
+       12:  544:        if (__pos._M_cur == this->_M_impl._M_start._M_cur)
+branch  0 taken 50% (fallthrough)
+branch  1 taken 50%
+branch  2 taken 50% (fallthrough)
+branch  3 taken 50%
+        -:  545:	  {
+        6:  546:	    iterator __new_start = _M_reserve_elements_at_front(__n);
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0% (throw)
+call    2 returned 100%
+branch  3 taken 100% (fallthrough)
+branch  4 taken 0% (throw)
+call    5 returned 100%
+        -:  547:	    __try
+        -:  548:	      {
+        6:  549:		std::__uninitialized_copy_a(__first, __last, __new_start,
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0% (throw)
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 100% (fallthrough)
+branch  8 taken 0% (throw)
+call    9 returned 100%
+        -:  550:					    _M_get_Tp_allocator());
+        6:  551:		this->_M_impl._M_start = __new_start;
+        -:  552:	      }
+    =====:  553:	    __catch(...)
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+        -:  554:	      {
+    =====:  555:		_M_destroy_nodes(__new_start._M_node,
+branch  0 never executed
+branch  1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+call    5 never executed
+        -:  556:				 this->_M_impl._M_start._M_node);
+    =====:  557:		__throw_exception_again;
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+        -:  558:	      }
+        -:  559:	  }
+        6:  560:        else if (__pos._M_cur == this->_M_impl._M_finish._M_cur)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0%
+        -:  561:	  {
+        6:  562:	    iterator __new_finish = _M_reserve_elements_at_back(__n);
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0% (throw)
+call    2 returned 100%
+branch  3 taken 100% (fallthrough)
+branch  4 taken 0% (throw)
+call    5 returned 100%
+        -:  563:	    __try
+        -:  564:	      {
+        6:  565:		std::__uninitialized_copy_a(__first, __last,
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0% (throw)
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 100% (fallthrough)
+branch  8 taken 0% (throw)
+call    9 returned 100%
+        -:  566:					    this->_M_impl._M_finish,
+        -:  567:					    _M_get_Tp_allocator());
+        6:  568:		this->_M_impl._M_finish = __new_finish;
+        -:  569:	      }
+    =====:  570:	    __catch(...)
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+        -:  571:	      {
+    =====:  572:		_M_destroy_nodes(this->_M_impl._M_finish._M_node + 1,
+branch  0 never executed
+branch  1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+call    5 never executed
+        -:  573:				 __new_finish._M_node + 1);
+    =====:  574:		__throw_exception_again;
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+        -:  575:	      }
+        -:  576:	  }
+        -:  577:        else
+    #####:  578:          _M_insert_aux(__pos, __first, __last, __n);
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+call    3 never executed
+call    4 never executed
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
+call    8 never executed
+call    9 never executed
+       12:  579:      }
+        -:  580:
+        -:  581:  template<typename _Tp, typename _Alloc>
+        -:  582:#ifdef __GXX_EXPERIMENTAL_CXX0X__
+        -:  583:    template<typename... _Args>
+        -:  584:      typename deque<_Tp, _Alloc>::iterator
+function _ZNSt5dequeIiSaIiEE13_M_insert_auxIIiEEESt15_Deque_iteratorIiRiPiES6_DpOT_ called 6 returned 100% blocks executed 52%
+function _ZNSt5dequeIdSaIdEE13_M_insert_auxIIdEEESt15_Deque_iteratorIdRdPdES6_DpOT_ called 6 returned 100% blocks executed 52%
+       12:  585:      deque<_Tp, _Alloc>::
+        -:  586:      _M_insert_aux(iterator __pos, _Args&&... __args)
+        -:  587:      {
+       12:  588:	value_type __x_copy(std::forward<_Args>(__args)...); // XXX copy
+call    0 returned 100%
+call    1 returned 100%
+        -:  589:#else
+        -:  590:    typename deque<_Tp, _Alloc>::iterator
+        -:  591:      deque<_Tp, _Alloc>::
+        -:  592:      _M_insert_aux(iterator __pos, const value_type& __x)
+        -:  593:      {
+        -:  594:	value_type __x_copy = __x; // XXX copy
+        -:  595:#endif
+       12:  596:	difference_type __index = __pos - this->_M_impl._M_start;
+call    0 returned 100%
+call    1 returned 100%
+       12:  597:	if (static_cast<size_type>(__index) < size() / 2)
+call    0 returned 100%
+branch  1 taken 100% (fallthrough)
+branch  2 taken 0%
+call    3 returned 100%
+branch  4 taken 100% (fallthrough)
+branch  5 taken 0%
+        -:  598:	  {
+       12:  599:	    push_front(_GLIBCXX_MOVE(front()));
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0% (throw)
+call    4 returned 100%
+call    5 returned 100%
+call    6 returned 100%
+branch  7 taken 100% (fallthrough)
+branch  8 taken 0% (throw)
+call    9 returned 100%
+       12:  600:	    iterator __front1 = this->_M_impl._M_start;
+call    0 returned 100%
+call    1 returned 100%
+       12:  601:	    ++__front1;
+call    0 returned 100%
+call    1 returned 100%
+       12:  602:	    iterator __front2 = __front1;
+call    0 returned 100%
+call    1 returned 100%
+       12:  603:	    ++__front2;
+call    0 returned 100%
+call    1 returned 100%
+       12:  604:	    __pos = this->_M_impl._M_start + __index;
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0% (throw)
+call    2 returned 100%
+branch  3 taken 100% (fallthrough)
+branch  4 taken 0% (throw)
+call    5 returned 100%
+       12:  605:	    iterator __pos1 = __pos;
+call    0 returned 100%
+call    1 returned 100%
+       12:  606:	    ++__pos1;
+call    0 returned 100%
+call    1 returned 100%
+       12:  607:	    _GLIBCXX_MOVE3(__front2, __pos1, __front1);
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+branch  3 taken 100% (fallthrough)
+branch  4 taken 0% (throw)
+call    5 returned 100%
+call    6 returned 100%
+call    7 returned 100%
+call    8 returned 100%
+branch  9 taken 100% (fallthrough)
+branch 10 taken 0% (throw)
+call   11 returned 100%
+        -:  608:	  }
+        -:  609:	else
+        -:  610:	  {
+    #####:  611:	    push_back(_GLIBCXX_MOVE(back()));
+branch  0 never executed
+branch  1 never executed
+call    2 never executed
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+call    9 never executed
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+call   13 never executed
+    #####:  612:	    iterator __back1 = this->_M_impl._M_finish;
+call    0 never executed
+call    1 never executed
+    #####:  613:	    --__back1;
+branch  0 never executed
+branch  1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+call    5 never executed
+    #####:  614:	    iterator __back2 = __back1;
+call    0 never executed
+call    1 never executed
+    #####:  615:	    --__back2;
+branch  0 never executed
+branch  1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+call    5 never executed
+    #####:  616:	    __pos = this->_M_impl._M_start + __index;
+branch  0 never executed
+branch  1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+call    5 never executed
+    #####:  617:	    _GLIBCXX_MOVE_BACKWARD3(__pos, __back2, __back1);
+call    0 never executed
+call    1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+call    5 never executed
+call    6 never executed
+call    7 never executed
+call    8 never executed
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+call   12 never executed
+call   13 never executed
+        -:  618:	  }
+       12:  619:	*__pos = _GLIBCXX_MOVE(__x_copy);
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+       12:  620:	return __pos;
+call    0 returned 100%
+call    1 returned 100%
+        -:  621:      }
+        -:  622:
+        -:  623:  template <typename _Tp, typename _Alloc>
+        -:  624:    void
+        -:  625:    deque<_Tp, _Alloc>::
+        -:  626:    _M_insert_aux(iterator __pos, size_type __n, const value_type& __x)
+        -:  627:    {
+        -:  628:      const difference_type __elems_before = __pos - this->_M_impl._M_start;
+        -:  629:      const size_type __length = this->size();
+        -:  630:      value_type __x_copy = __x;
+        -:  631:      if (__elems_before < difference_type(__length / 2))
+        -:  632:	{
+        -:  633:	  iterator __new_start = _M_reserve_elements_at_front(__n);
+        -:  634:	  iterator __old_start = this->_M_impl._M_start;
+        -:  635:	  __pos = this->_M_impl._M_start + __elems_before;
+        -:  636:	  __try
+        -:  637:	    {
+        -:  638:	      if (__elems_before >= difference_type(__n))
+        -:  639:		{
+        -:  640:		  iterator __start_n = (this->_M_impl._M_start
+        -:  641:					+ difference_type(__n));
+        -:  642:		  std::__uninitialized_move_a(this->_M_impl._M_start,
+        -:  643:					      __start_n, __new_start,
+        -:  644:					      _M_get_Tp_allocator());
+        -:  645:		  this->_M_impl._M_start = __new_start;
+        -:  646:		  _GLIBCXX_MOVE3(__start_n, __pos, __old_start);
+        -:  647:		  std::fill(__pos - difference_type(__n), __pos, __x_copy);
+        -:  648:		}
+        -:  649:	      else
+        -:  650:		{
+        -:  651:		  std::__uninitialized_move_fill(this->_M_impl._M_start,
+        -:  652:						 __pos, __new_start,
+        -:  653:						 this->_M_impl._M_start,
+        -:  654:						 __x_copy,
+        -:  655:						 _M_get_Tp_allocator());
+        -:  656:		  this->_M_impl._M_start = __new_start;
+        -:  657:		  std::fill(__old_start, __pos, __x_copy);
+        -:  658:		}
+        -:  659:	    }
+        -:  660:	  __catch(...)
+        -:  661:	    {
+        -:  662:	      _M_destroy_nodes(__new_start._M_node,
+        -:  663:			       this->_M_impl._M_start._M_node);
+        -:  664:	      __throw_exception_again;
+        -:  665:	    }
+        -:  666:	}
+        -:  667:      else
+        -:  668:	{
+        -:  669:	  iterator __new_finish = _M_reserve_elements_at_back(__n);
+        -:  670:	  iterator __old_finish = this->_M_impl._M_finish;
+        -:  671:	  const difference_type __elems_after =
+        -:  672:	    difference_type(__length) - __elems_before;
+        -:  673:	  __pos = this->_M_impl._M_finish - __elems_after;
+        -:  674:	  __try
+        -:  675:	    {
+        -:  676:	      if (__elems_after > difference_type(__n))
+        -:  677:		{
+        -:  678:		  iterator __finish_n = (this->_M_impl._M_finish
+        -:  679:					 - difference_type(__n));
+        -:  680:		  std::__uninitialized_move_a(__finish_n,
+        -:  681:					      this->_M_impl._M_finish,
+        -:  682:					      this->_M_impl._M_finish,
+        -:  683:					      _M_get_Tp_allocator());
+        -:  684:		  this->_M_impl._M_finish = __new_finish;
+        -:  685:		  _GLIBCXX_MOVE_BACKWARD3(__pos, __finish_n, __old_finish);
+        -:  686:		  std::fill(__pos, __pos + difference_type(__n), __x_copy);
+        -:  687:		}
+        -:  688:	      else
+        -:  689:		{
+        -:  690:		  std::__uninitialized_fill_move(this->_M_impl._M_finish,
+        -:  691:						 __pos + difference_type(__n),
+        -:  692:						 __x_copy, __pos,
+        -:  693:						 this->_M_impl._M_finish,
+        -:  694:						 _M_get_Tp_allocator());
+        -:  695:		  this->_M_impl._M_finish = __new_finish;
+        -:  696:		  std::fill(__pos, __old_finish, __x_copy);
+        -:  697:		}
+        -:  698:	    }
+        -:  699:	  __catch(...)
+        -:  700:	    {
+        -:  701:	      _M_destroy_nodes(this->_M_impl._M_finish._M_node + 1,
+        -:  702:			       __new_finish._M_node + 1);
+        -:  703:	      __throw_exception_again;
+        -:  704:	    }
+        -:  705:	}
+        -:  706:    }
+        -:  707:
+        -:  708:  template <typename _Tp, typename _Alloc>
+        -:  709:    template <typename _ForwardIterator>
+        -:  710:      void
+function _ZNSt5dequeIiSaIiEE13_M_insert_auxISt15_Deque_iteratorIiRKiPS4_EEEvS3_IiRiPiET_SB_m called 0 returned 0% blocks executed 0%
+function _ZNSt5dequeIdSaIdEE13_M_insert_auxISt15_Deque_iteratorIdRKdPS4_EEEvS3_IdRdPdET_SB_m called 0 returned 0% blocks executed 0%
+    #####:  711:      deque<_Tp, _Alloc>::
+        -:  712:      _M_insert_aux(iterator __pos,
+        -:  713:                    _ForwardIterator __first, _ForwardIterator __last,
+        -:  714:                    size_type __n)
+        -:  715:      {
+    #####:  716:        const difference_type __elemsbefore = __pos - this->_M_impl._M_start;
+call    0 never executed
+call    1 never executed
+    #####:  717:        const size_type __length = size();
+call    0 never executed
+call    1 never executed
+    #####:  718:        if (static_cast<size_type>(__elemsbefore) < __length / 2)
+branch  0 never executed
+branch  1 never executed
+branch  2 never executed
+branch  3 never executed
+        -:  719:	  {
+    #####:  720:	    iterator __new_start = _M_reserve_elements_at_front(__n);
+branch  0 never executed
+branch  1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+call    5 never executed
+    #####:  721:	    iterator __old_start = this->_M_impl._M_start;
+call    0 never executed
+call    1 never executed
+    #####:  722:	    __pos = this->_M_impl._M_start + __elemsbefore;
+branch  0 never executed
+branch  1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+call    5 never executed
+        -:  723:	    __try
+        -:  724:	      {
+    #####:  725:		if (__elemsbefore >= difference_type(__n))
+branch  0 never executed
+branch  1 never executed
+branch  2 never executed
+branch  3 never executed
+        -:  726:		  {
+        -:  727:		    iterator __start_n = (this->_M_impl._M_start
+    #####:  728:					  + difference_type(__n));
+branch  0 never executed
+branch  1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+call    5 never executed
+    #####:  729:		    std::__uninitialized_move_a(this->_M_impl._M_start,
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+call    6 never executed
+call    7 never executed
+call    8 never executed
+call    9 never executed
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+call   13 never executed
+        -:  730:						__start_n, __new_start,
+        -:  731:						_M_get_Tp_allocator());
+    #####:  732:		    this->_M_impl._M_start = __new_start;
+    #####:  733:		    _GLIBCXX_MOVE3(__start_n, __pos, __old_start);
+call    0 never executed
+call    1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+call    5 never executed
+call    6 never executed
+call    7 never executed
+call    8 never executed
+branch  9 never executed
+branch 10 never executed
+call   11 never executed
+    #####:  734:		    std::copy(__first, __last, __pos - difference_type(__n));
+branch  0 never executed
+branch  1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
+call    8 never executed
+branch  9 never executed
+branch 10 never executed
+call   11 never executed
+        -:  735:		  }
+        -:  736:		else
+        -:  737:		  {
+    #####:  738:		    _ForwardIterator __mid = __first;
+    #####:  739:		    std::advance(__mid, difference_type(__n) - __elemsbefore);
+branch  0 never executed
+branch  1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+call    5 never executed
+    #####:  740:		    std::__uninitialized_move_copy(this->_M_impl._M_start,
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+call    6 never executed
+call    7 never executed
+call    8 never executed
+call    9 never executed
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+call   13 never executed
+        -:  741:						   __pos, __first, __mid,
+        -:  742:						   __new_start,
+        -:  743:						   _M_get_Tp_allocator());
+    #####:  744:		    this->_M_impl._M_start = __new_start;
+    #####:  745:		    std::copy(__mid, __last, __old_start);
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+call    3 never executed
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+call    7 never executed
+        -:  746:		  }
+        -:  747:	      }
+    =====:  748:	    __catch(...)
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+        -:  749:	      {
+    =====:  750:		_M_destroy_nodes(__new_start._M_node,
+branch  0 never executed
+branch  1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+call    5 never executed
+        -:  751:				 this->_M_impl._M_start._M_node);
+    =====:  752:		__throw_exception_again;
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+        -:  753:	      }
+        -:  754:	  }
+        -:  755:        else
+        -:  756:        {
+    #####:  757:          iterator __new_finish = _M_reserve_elements_at_back(__n);
+branch  0 never executed
+branch  1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+call    5 never executed
+    #####:  758:          iterator __old_finish = this->_M_impl._M_finish;
+call    0 never executed
+call    1 never executed
+        -:  759:          const difference_type __elemsafter =
+    #####:  760:            difference_type(__length) - __elemsbefore;
+    #####:  761:          __pos = this->_M_impl._M_finish - __elemsafter;
+branch  0 never executed
+branch  1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+call    5 never executed
+        -:  762:          __try
+        -:  763:            {
+    #####:  764:              if (__elemsafter > difference_type(__n))
+branch  0 never executed
+branch  1 never executed
+branch  2 never executed
+branch  3 never executed
+        -:  765:		{
+        -:  766:		  iterator __finish_n = (this->_M_impl._M_finish
+    #####:  767:					 - difference_type(__n));
+branch  0 never executed
+branch  1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+call    5 never executed
+    #####:  768:		  std::__uninitialized_move_a(__finish_n,
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+call    6 never executed
+call    7 never executed
+call    8 never executed
+call    9 never executed
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+call   13 never executed
+        -:  769:					      this->_M_impl._M_finish,
+        -:  770:					      this->_M_impl._M_finish,
+        -:  771:					      _M_get_Tp_allocator());
+    #####:  772:		  this->_M_impl._M_finish = __new_finish;
+    #####:  773:		  _GLIBCXX_MOVE_BACKWARD3(__pos, __finish_n, __old_finish);
+call    0 never executed
+call    1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+call    5 never executed
+call    6 never executed
+call    7 never executed
+call    8 never executed
+branch  9 never executed
+branch 10 never executed
+call   11 never executed
+    #####:  774:		  std::copy(__first, __last, __pos);
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+call    3 never executed
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+call    7 never executed
+        -:  775:		}
+        -:  776:              else
+        -:  777:		{
+    #####:  778:		  _ForwardIterator __mid = __first;
+    #####:  779:		  std::advance(__mid, __elemsafter);
+branch  0 never executed
+branch  1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+call    5 never executed
+    #####:  780:		  std::__uninitialized_copy_move(__mid, __last, __pos,
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+call    6 never executed
+call    7 never executed
+call    8 never executed
+call    9 never executed
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+call   13 never executed
+        -:  781:						 this->_M_impl._M_finish,
+        -:  782:						 this->_M_impl._M_finish,
+        -:  783:						 _M_get_Tp_allocator());
+    #####:  784:		  this->_M_impl._M_finish = __new_finish;
+    #####:  785:		  std::copy(__first, __mid, __pos);
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+call    3 never executed
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+call    7 never executed
+        -:  786:		}
+        -:  787:            }
+    =====:  788:          __catch(...)
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+        -:  789:            {
+    =====:  790:              _M_destroy_nodes(this->_M_impl._M_finish._M_node + 1,
+branch  0 never executed
+branch  1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+call    5 never executed
+        -:  791:			       __new_finish._M_node + 1);
+    =====:  792:              __throw_exception_again;
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+        -:  793:            }
+        -:  794:        }
+    #####:  795:      }
+        -:  796:
+        -:  797:   template<typename _Tp, typename _Alloc>
+        -:  798:     void
+        -:  799:     deque<_Tp, _Alloc>::
+        -:  800:     _M_destroy_data_aux(iterator __first, iterator __last)
+        -:  801:     {
+        -:  802:       for (_Map_pointer __node = __first._M_node + 1;
+        -:  803:	    __node < __last._M_node; ++__node)
+        -:  804:	 std::_Destroy(*__node, *__node + _S_buffer_size(),
+        -:  805:		       _M_get_Tp_allocator());
+        -:  806:
+        -:  807:       if (__first._M_node != __last._M_node)
+        -:  808:	 {
+        -:  809:	   std::_Destroy(__first._M_cur, __first._M_last,
+        -:  810:			 _M_get_Tp_allocator());
+        -:  811:	   std::_Destroy(__last._M_first, __last._M_cur,
+        -:  812:			 _M_get_Tp_allocator());
+        -:  813:	 }
+        -:  814:       else
+        -:  815:	 std::_Destroy(__first._M_cur, __last._M_cur,
+        -:  816:		       _M_get_Tp_allocator());
+        -:  817:     }
+        -:  818:
+        -:  819:  template <typename _Tp, typename _Alloc>
+        -:  820:    void
+function _ZNSt5dequeIiSaIiEE24_M_new_elements_at_frontEm called 3 returned 100% blocks executed 52%
+function _ZNSt5dequeIdSaIdEE24_M_new_elements_at_frontEm called 3 returned 100% blocks executed 52%
+        6:  821:    deque<_Tp, _Alloc>::
+        -:  822:    _M_new_elements_at_front(size_type __new_elems)
+        -:  823:    {
+        6:  824:      if (this->max_size() - this->size() < __new_elems)
+call    0 returned 100%
+call    1 returned 100%
+branch  2 taken 0% (fallthrough)
+branch  3 taken 100%
+call    4 returned 100%
+call    5 returned 100%
+branch  6 taken 0% (fallthrough)
+branch  7 taken 100%
+    #####:  825:	__throw_length_error(__N("deque::_M_new_elements_at_front"));
+call    0 never executed
+call    1 never executed
+        -:  826:
+        -:  827:      const size_type __new_nodes = ((__new_elems + _S_buffer_size() - 1)
+        6:  828:				     / _S_buffer_size());
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+        6:  829:      _M_reserve_map_at_front(__new_nodes);
+call    0 returned 100%
+call    1 returned 100%
+        -:  830:      size_type __i;
+        -:  831:      __try
+        -:  832:        {
+       12:  833:          for (__i = 1; __i <= __new_nodes; ++__i)
+branch  0 taken 50%
+branch  1 taken 50% (fallthrough)
+branch  2 taken 50%
+branch  3 taken 50% (fallthrough)
+        6:  834:            *(this->_M_impl._M_start._M_node - __i) = this->_M_allocate_node();
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0% (throw)
+call    2 returned 100%
+branch  3 taken 100% (fallthrough)
+branch  4 taken 0% (throw)
+call    5 returned 100%
+        -:  835:        }
+    =====:  836:      __catch(...)
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+call    4 never executed
+call    5 never executed
+        -:  837:        {
+    =====:  838:          for (size_type __j = 1; __j < __i; ++__j)
+branch  0 never executed
+branch  1 never executed
+branch  2 never executed
+branch  3 never executed
+    =====:  839:            _M_deallocate_node(*(this->_M_impl._M_start._M_node - __j));
+call    0 never executed
+call    1 never executed
+    =====:  840:          __throw_exception_again;
+call    0 never executed
+call    1 never executed
+        -:  841:        }
+        6:  842:    }
+        -:  843:
+        -:  844:  template <typename _Tp, typename _Alloc>
+        -:  845:    void
+function _ZNSt5dequeIiSaIiEE23_M_new_elements_at_backEm called 0 returned 0% blocks executed 0%
+function _ZNSt5dequeIdSaIdEE23_M_new_elements_at_backEm called 0 returned 0% blocks executed 0%
+    #####:  846:    deque<_Tp, _Alloc>::
+        -:  847:    _M_new_elements_at_back(size_type __new_elems)
+        -:  848:    {
+    #####:  849:      if (this->max_size() - this->size() < __new_elems)
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+call    4 never executed
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
+    #####:  850:	__throw_length_error(__N("deque::_M_new_elements_at_back"));
+call    0 never executed
+call    1 never executed
+        -:  851:
+        -:  852:      const size_type __new_nodes = ((__new_elems + _S_buffer_size() - 1)
+    #####:  853:				     / _S_buffer_size());
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+    #####:  854:      _M_reserve_map_at_back(__new_nodes);
+call    0 never executed
+call    1 never executed
+        -:  855:      size_type __i;
+        -:  856:      __try
+        -:  857:        {
+    #####:  858:          for (__i = 1; __i <= __new_nodes; ++__i)
+branch  0 never executed
+branch  1 never executed
+branch  2 never executed
+branch  3 never executed
+    #####:  859:            *(this->_M_impl._M_finish._M_node + __i) = this->_M_allocate_node();
+branch  0 never executed
+branch  1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+call    5 never executed
+        -:  860:        }
+    =====:  861:      __catch(...)
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+call    4 never executed
+call    5 never executed
+        -:  862:        {
+    =====:  863:          for (size_type __j = 1; __j < __i; ++__j)
+branch  0 never executed
+branch  1 never executed
+branch  2 never executed
+branch  3 never executed
+    =====:  864:            _M_deallocate_node(*(this->_M_impl._M_finish._M_node + __j));
+call    0 never executed
+call    1 never executed
+    =====:  865:          __throw_exception_again;
+call    0 never executed
+call    1 never executed
+        -:  866:        }
+    #####:  867:    }
+        -:  868:
+        -:  869:  template <typename _Tp, typename _Alloc>
+        -:  870:    void
+function _ZNSt5dequeIiSaIiEE17_M_reallocate_mapEmb called 0 returned 0% blocks executed 0%
+function _ZNSt5dequeIdSaIdEE17_M_reallocate_mapEmb called 0 returned 0% blocks executed 0%
+    #####:  871:    deque<_Tp, _Alloc>::
+        -:  872:    _M_reallocate_map(size_type __nodes_to_add, bool __add_at_front)
+        -:  873:    {
+        -:  874:      const size_type __old_num_nodes
+    #####:  875:	= this->_M_impl._M_finish._M_node - this->_M_impl._M_start._M_node + 1;
+    #####:  876:      const size_type __new_num_nodes = __old_num_nodes + __nodes_to_add;
+        -:  877:
+        -:  878:      _Map_pointer __new_nstart;
+    #####:  879:      if (this->_M_impl._M_map_size > 2 * __new_num_nodes)
+branch  0 never executed
+branch  1 never executed
+branch  2 never executed
+branch  3 never executed
+        -:  880:	{
+    #####:  881:	  __new_nstart = this->_M_impl._M_map + (this->_M_impl._M_map_size
+branch  0 never executed
+branch  1 never executed
+branch  2 never executed
+branch  3 never executed
+        -:  882:					 - __new_num_nodes) / 2
+        -:  883:	                 + (__add_at_front ? __nodes_to_add : 0);
+    #####:  884:	  if (__new_nstart < this->_M_impl._M_start._M_node)
+branch  0 never executed
+branch  1 never executed
+branch  2 never executed
+branch  3 never executed
+    #####:  885:	    std::copy(this->_M_impl._M_start._M_node,
+call    0 never executed
+call    1 never executed
+        -:  886:		      this->_M_impl._M_finish._M_node + 1,
+        -:  887:		      __new_nstart);
+        -:  888:	  else
+    #####:  889:	    std::copy_backward(this->_M_impl._M_start._M_node,
+call    0 never executed
+call    1 never executed
+        -:  890:			       this->_M_impl._M_finish._M_node + 1,
+        -:  891:			       __new_nstart + __old_num_nodes);
+        -:  892:	}
+        -:  893:      else
+        -:  894:	{
+        -:  895:	  size_type __new_map_size = this->_M_impl._M_map_size
+        -:  896:	                             + std::max(this->_M_impl._M_map_size,
+    #####:  897:						__nodes_to_add) + 2;
+call    0 never executed
+call    1 never executed
+        -:  898:
+    #####:  899:	  _Map_pointer __new_map = this->_M_allocate_map(__new_map_size);
+call    0 never executed
+call    1 never executed
+    #####:  900:	  __new_nstart = __new_map + (__new_map_size - __new_num_nodes) / 2
+branch  0 never executed
+branch  1 never executed
+branch  2 never executed
+branch  3 never executed
+        -:  901:	                 + (__add_at_front ? __nodes_to_add : 0);
+    #####:  902:	  std::copy(this->_M_impl._M_start._M_node,
+call    0 never executed
+call    1 never executed
+        -:  903:		    this->_M_impl._M_finish._M_node + 1,
+        -:  904:		    __new_nstart);
+    #####:  905:	  _M_deallocate_map(this->_M_impl._M_map, this->_M_impl._M_map_size);
+call    0 never executed
+call    1 never executed
+        -:  906:
+    #####:  907:	  this->_M_impl._M_map = __new_map;
+    #####:  908:	  this->_M_impl._M_map_size = __new_map_size;
+        -:  909:	}
+        -:  910:
+    #####:  911:      this->_M_impl._M_start._M_set_node(__new_nstart);
+call    0 never executed
+call    1 never executed
+    #####:  912:      this->_M_impl._M_finish._M_set_node(__new_nstart + __old_num_nodes - 1);
+call    0 never executed
+call    1 never executed
+    #####:  913:    }
+        -:  914:
+        -:  915:  // Overload for deque::iterators, exploiting the "segmented-iterator
+        -:  916:  // optimization".
+        -:  917:  template<typename _Tp>
+        -:  918:    void
+        -:  919:    fill(const _Deque_iterator<_Tp, _Tp&, _Tp*>& __first,
+        -:  920:	 const _Deque_iterator<_Tp, _Tp&, _Tp*>& __last, const _Tp& __value)
+        -:  921:    {
+        -:  922:      typedef typename _Deque_iterator<_Tp, _Tp&, _Tp*>::_Self _Self;
+        -:  923:
+        -:  924:      for (typename _Self::_Map_pointer __node = __first._M_node + 1;
+        -:  925:           __node < __last._M_node; ++__node)
+        -:  926:	std::fill(*__node, *__node + _Self::_S_buffer_size(), __value);
+        -:  927:
+        -:  928:      if (__first._M_node != __last._M_node)
+        -:  929:	{
+        -:  930:	  std::fill(__first._M_cur, __first._M_last, __value);
+        -:  931:	  std::fill(__last._M_first, __last._M_cur, __value);
+        -:  932:	}
+        -:  933:      else
+        -:  934:	std::fill(__first._M_cur, __last._M_cur, __value);
+        -:  935:    }
+        -:  936:
+        -:  937:  template<typename _Tp>
+        -:  938:    _Deque_iterator<_Tp, _Tp&, _Tp*>
+function _ZSt4copyIiESt15_Deque_iteratorIT_RS1_PS1_ES0_IS1_RKS1_PS5_ES8_S4_ called 12 returned 100% blocks executed 92%
+function _ZSt4copyIdESt15_Deque_iteratorIT_RS1_PS1_ES0_IS1_RKS1_PS5_ES8_S4_ called 12 returned 100% blocks executed 92%
+       24:  939:    copy(_Deque_iterator<_Tp, const _Tp&, const _Tp*> __first,
+        -:  940:	 _Deque_iterator<_Tp, const _Tp&, const _Tp*> __last,
+        -:  941:	 _Deque_iterator<_Tp, _Tp&, _Tp*> __result)
+        -:  942:    {
+        -:  943:      typedef typename _Deque_iterator<_Tp, _Tp&, _Tp*>::_Self _Self;
+        -:  944:      typedef typename _Self::difference_type difference_type;
+        -:  945:
+       24:  946:      difference_type __len = __last - __first;
+call    0 returned 100%
+call    1 returned 100%
+       66:  947:      while (__len > 0)
+branch  0 taken 43%
+branch  1 taken 57% (fallthrough)
+branch  2 taken 43%
+branch  3 taken 57% (fallthrough)
+        -:  948:	{
+        -:  949:	  const difference_type __clen
+        -:  950:	    = std::min(__len, std::min(__first._M_last - __first._M_cur,
+       18:  951:				       __result._M_last - __result._M_cur));
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+       18:  952:	  std::copy(__first._M_cur, __first._M_cur + __clen, __result._M_cur);
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0% (throw)
+call    2 returned 100%
+branch  3 taken 100% (fallthrough)
+branch  4 taken 0% (throw)
+call    5 returned 100%
+       18:  953:	  __first += __clen;
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0% (throw)
+call    2 returned 100%
+branch  3 taken 100% (fallthrough)
+branch  4 taken 0% (throw)
+call    5 returned 100%
+       18:  954:	  __result += __clen;
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0% (throw)
+call    2 returned 100%
+branch  3 taken 100% (fallthrough)
+branch  4 taken 0% (throw)
+call    5 returned 100%
+       18:  955:	  __len -= __clen;
+        -:  956:	}
+       24:  957:      return __result;
+call    0 returned 100%
+call    1 never executed
+call    2 returned 100%
+call    3 never executed
+        -:  958:    }
+        -:  959:
+        -:  960:  template<typename _Tp>
+        -:  961:    _Deque_iterator<_Tp, _Tp&, _Tp*>
+        -:  962:    copy_backward(_Deque_iterator<_Tp, const _Tp&, const _Tp*> __first,
+        -:  963:		  _Deque_iterator<_Tp, const _Tp&, const _Tp*> __last,
+        -:  964:		  _Deque_iterator<_Tp, _Tp&, _Tp*> __result)
+        -:  965:    {
+        -:  966:      typedef typename _Deque_iterator<_Tp, _Tp&, _Tp*>::_Self _Self;
+        -:  967:      typedef typename _Self::difference_type difference_type;
+        -:  968:
+        -:  969:      difference_type __len = __last - __first;
+        -:  970:      while (__len > 0)
+        -:  971:	{
+        -:  972:	  difference_type __llen = __last._M_cur - __last._M_first;
+        -:  973:	  _Tp* __lend = __last._M_cur;
+        -:  974:
+        -:  975:	  difference_type __rlen = __result._M_cur - __result._M_first;
+        -:  976:	  _Tp* __rend = __result._M_cur;
+        -:  977:
+        -:  978:	  if (!__llen)
+        -:  979:	    {
+        -:  980:	      __llen = _Self::_S_buffer_size();
+        -:  981:	      __lend = *(__last._M_node - 1) + __llen;
+        -:  982:	    }
+        -:  983:	  if (!__rlen)
+        -:  984:	    {
+        -:  985:	      __rlen = _Self::_S_buffer_size();
+        -:  986:	      __rend = *(__result._M_node - 1) + __rlen;
+        -:  987:	    }
+        -:  988:
+        -:  989:	  const difference_type __clen = std::min(__len,
+        -:  990:						  std::min(__llen, __rlen));
+        -:  991:	  std::copy_backward(__lend - __clen, __lend, __rend);
+        -:  992:	  __last -= __clen;
+        -:  993:	  __result -= __clen;
+        -:  994:	  __len -= __clen;
+        -:  995:	}
+        -:  996:      return __result;
+        -:  997:    }
+        -:  998:
+        -:  999:#ifdef __GXX_EXPERIMENTAL_CXX0X__
+        -: 1000:  template<typename _Tp>
+        -: 1001:    _Deque_iterator<_Tp, _Tp&, _Tp*>
+function _ZSt4moveIiESt15_Deque_iteratorIT_RS1_PS1_ES0_IS1_RKS1_PS5_ES8_S4_ called 9 returned 100% blocks executed 92%
+function _ZSt4moveIdESt15_Deque_iteratorIT_RS1_PS1_ES0_IS1_RKS1_PS5_ES8_S4_ called 9 returned 100% blocks executed 92%
+       18: 1002:    move(_Deque_iterator<_Tp, const _Tp&, const _Tp*> __first,
+        -: 1003:	 _Deque_iterator<_Tp, const _Tp&, const _Tp*> __last,
+        -: 1004:	 _Deque_iterator<_Tp, _Tp&, _Tp*> __result)
+        -: 1005:    {
+        -: 1006:      typedef typename _Deque_iterator<_Tp, _Tp&, _Tp*>::_Self _Self;
+        -: 1007:      typedef typename _Self::difference_type difference_type;
+        -: 1008:
+       18: 1009:      difference_type __len = __last - __first;
+call    0 returned 100%
+call    1 returned 100%
+       42: 1010:      while (__len > 0)
+branch  0 taken 25%
+branch  1 taken 75% (fallthrough)
+branch  2 taken 25%
+branch  3 taken 75% (fallthrough)
+        -: 1011:	{
+        -: 1012:	  const difference_type __clen
+        -: 1013:	    = std::min(__len, std::min(__first._M_last - __first._M_cur,
+        6: 1014:				       __result._M_last - __result._M_cur));
+call    0 returned 100%
+call    1 returned 100%
+call    2 returned 100%
+call    3 returned 100%
+        6: 1015:	  std::move(__first._M_cur, __first._M_cur + __clen, __result._M_cur);
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0% (throw)
+call    2 returned 100%
+branch  3 taken 100% (fallthrough)
+branch  4 taken 0% (throw)
+call    5 returned 100%
+        6: 1016:	  __first += __clen;
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0% (throw)
+call    2 returned 100%
+branch  3 taken 100% (fallthrough)
+branch  4 taken 0% (throw)
+call    5 returned 100%
+        6: 1017:	  __result += __clen;
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0% (throw)
+call    2 returned 100%
+branch  3 taken 100% (fallthrough)
+branch  4 taken 0% (throw)
+call    5 returned 100%
+        6: 1018:	  __len -= __clen;
+        -: 1019:	}
+       18: 1020:      return __result;
+call    0 returned 100%
+call    1 never executed
+call    2 returned 100%
+call    3 never executed
+        -: 1021:    }
+        -: 1022:
+        -: 1023:  template<typename _Tp>
+        -: 1024:    _Deque_iterator<_Tp, _Tp&, _Tp*>
+function _ZSt13move_backwardIiESt15_Deque_iteratorIT_RS1_PS1_ES0_IS1_RKS1_PS5_ES8_S4_ called 0 returned 0% blocks executed 0%
+function _ZSt13move_backwardIdESt15_Deque_iteratorIT_RS1_PS1_ES0_IS1_RKS1_PS5_ES8_S4_ called 0 returned 0% blocks executed 0%
+    #####: 1025:    move_backward(_Deque_iterator<_Tp, const _Tp&, const _Tp*> __first,
+        -: 1026:		  _Deque_iterator<_Tp, const _Tp&, const _Tp*> __last,
+        -: 1027:		  _Deque_iterator<_Tp, _Tp&, _Tp*> __result)
+        -: 1028:    {
+        -: 1029:      typedef typename _Deque_iterator<_Tp, _Tp&, _Tp*>::_Self _Self;
+        -: 1030:      typedef typename _Self::difference_type difference_type;
+        -: 1031:
+    #####: 1032:      difference_type __len = __last - __first;
+call    0 never executed
+call    1 never executed
+    #####: 1033:      while (__len > 0)
+branch  0 never executed
+branch  1 never executed
+branch  2 never executed
+branch  3 never executed
+        -: 1034:	{
+    #####: 1035:	  difference_type __llen = __last._M_cur - __last._M_first;
+    #####: 1036:	  _Tp* __lend = __last._M_cur;
+        -: 1037:
+    #####: 1038:	  difference_type __rlen = __result._M_cur - __result._M_first;
+    #####: 1039:	  _Tp* __rend = __result._M_cur;
+        -: 1040:
+    #####: 1041:	  if (!__llen)
+branch  0 never executed
+branch  1 never executed
+branch  2 never executed
+branch  3 never executed
+        -: 1042:	    {
+    #####: 1043:	      __llen = _Self::_S_buffer_size();
+call    0 never executed
+call    1 never executed
+    #####: 1044:	      __lend = *(__last._M_node - 1) + __llen;
+        -: 1045:	    }
+    #####: 1046:	  if (!__rlen)
+branch  0 never executed
+branch  1 never executed
+branch  2 never executed
+branch  3 never executed
+        -: 1047:	    {
+    #####: 1048:	      __rlen = _Self::_S_buffer_size();
+call    0 never executed
+call    1 never executed
+    #####: 1049:	      __rend = *(__result._M_node - 1) + __rlen;
+        -: 1050:	    }
+        -: 1051:
+        -: 1052:	  const difference_type __clen = std::min(__len,
+    #####: 1053:						  std::min(__llen, __rlen));
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+    #####: 1054:	  std::move_backward(__lend - __clen, __lend, __rend);
+branch  0 never executed
+branch  1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+call    5 never executed
+    #####: 1055:	  __last -= __clen;
+branch  0 never executed
+branch  1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+call    5 never executed
+    #####: 1056:	  __result -= __clen;
+branch  0 never executed
+branch  1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+call    5 never executed
+    #####: 1057:	  __len -= __clen;
+        -: 1058:	}
+    #####: 1059:      return __result;
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+        -: 1060:    }
+        -: 1061:#endif
+        -: 1062:
+        -: 1063:_GLIBCXX_END_NAMESPACE_CONTAINER
+        -: 1064:} // namespace std
+        -: 1065:
+        -: 1066:#endif

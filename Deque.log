@@ -1,0 +1,145 @@
+commit 1370571e4e35feb79ed12b839d820ad5ceff9cf5
+Author: Andrew Vohl <vohl0803@cs.utexas.edu>
+Date:   Fri Jul 25 17:40:26 2014 -0500
+
+    Second to last Push "Hopefully"
+    closes #18, closes #19
+
+commit d9778155de59164f2da2ab08a996e8a0d07c1529
+Author: vohl0803 <acvohl@gmail.com>
+Date:   Fri Jul 25 16:54:20 2014 -0500
+
+    Done with my_deque, next ours spent debugging any boundary cases
+    closes #17, closes #16, closes #15, closes #14, closes #5, closes #8, closes #2
+
+commit 1f3988c1cbe40e1e13e9d525fbff73ad8673d085
+Author: Andrew Vohl <vohl0803@cs.utexas.edu>
+Date:   Thu Jul 24 19:22:22 2014 -0500
+
+    I want to play Destiny :(
+
+commit 723cb99f077f90308d6fa115fba5056ec1add5c4
+Merge: d3d0ac8 9057365
+Author: Andrew Vohl <vohl0803@cs.utexas.edu>
+Date:   Thu Jul 24 19:15:02 2014 -0500
+
+    Merge branch 'master' of https://github.com/vohl0803/cs378-deque
+    
+    Conflicts:
+    	TestDeque.c++
+
+commit d3d0ac88a96ad933f894a0a8d51dc30725bd4c24
+Author: Andrew Vohl <vohl0803@cs.utexas.edu>
+Date:   Thu Jul 24 19:11:47 2014 -0500
+
+    RAAAAAAAWWWWWWWWWW
+
+commit 9057365535bab60078271940ed0a0fc7109b4742
+Author: Gerardo Gamboa <jergamb@cs.utexas.edu>
+Date:   Thu Jul 24 18:29:18 2014 -0500
+
+    most of the tests are completed
+
+commit ed0f3cc4b6da3e023b447a2413be92c3c2b81095
+Merge: 3ccfb94 ca295e0
+Author: Andrew Vohl <vohl0803@cs.utexas.edu>
+Date:   Wed Jul 23 16:59:45 2014 -0500
+
+    Merge branch 'master' of https://github.com/vohl0803/cs378-deque
+
+commit ca295e0d7ab09acf0f07042a5b1ef7a87b881025
+Merge: f10a244 bb6df6e
+Author: Gerardo Gamboa <jergamb@cs.utexas.edu>
+Date:   Wed Jul 23 16:59:07 2014 -0500
+
+    fixing merges
+
+commit f10a2447d9e3e109b0cec1ff305035928cbfd8cc
+Author: Gerardo Gamboa <jergamb@cs.utexas.edu>
+Date:   Wed Jul 23 16:50:56 2014 -0500
+
+    added capacity
+
+commit 3ccfb94cdc85d3e3656aea1d70bd5bfcd7245dec
+Author: Andrew Vohl <vohl0803@cs.utexas.edu>
+Date:   Wed Jul 23 16:50:15 2014 -0500
+
+    Nacho Cheese
+
+commit bb6df6eb782fd83f6282f6d5caf92bcac2c94c97
+Author: Andrew Vohl <vohl0803@cs.utexas.edu>
+Date:   Wed Jul 23 15:47:27 2014 -0500
+
+    Swap implemented
+
+commit c0f9da85fd7d556e1873494611b366616afb6cc4
+Merge: 40c7999 6352eed
+Author: Andrew Vohl <vohl0803@cs.utexas.edu>
+Date:   Wed Jul 23 15:15:37 2014 -0500
+
+    Merge branch 'master' of https://github.com/vohl0803/cs378-deque
+    
+    Conflicts:
+    	TestDeque.c++
+
+commit 40c799921efe0d97f2781353e413c1f10fdf5003
+Author: Andrew Vohl <vohl0803@cs.utexas.edu>
+Date:   Wed Jul 23 15:08:41 2014 -0500
+
+    Finished const iterator, copy constructor, front, back, and at
+
+commit 6352eede24f5fc78028880f37608247d42e27074
+Author: Gerardo Gamboa <jergamb@cs.utexas.edu>
+Date:   Wed Jul 23 14:41:10 2014 -0500
+
+    wrote some more tests
+
+commit 6d3b80dcb3ce4390479f160833aa8794d808ee8f
+Author: Andrew Vohl <vohl0803@cs.utexas.edu>
+Date:   Tue Jul 22 20:08:47 2014 -0500
+
+    I'm a boss. Iterator finished, and indexing.
+
+commit 8c3e6d8c068d5ca3eb639a7900d7a1fdd800ca94
+Author: Gerardo Gamboa <jergamb@cs.utexas.edu>
+Date:   Tue Jul 22 16:45:06 2014 -0500
+
+    Iterator is done except for dereference
+
+commit 4909fa136d3150f3fb090919b071b790f5a83d2d
+Author: Andrew Vohl <vohl0803@cs.utexas.edu>
+Date:   Tue Jul 22 15:13:12 2014 -0500
+
+    Fix constructor again, Did size, begin, end, and valid
+    closes #13;
+
+commit 19e89d501b17c062261d485adcdf1a987eb57699
+Author: Andrew Vohl <vohl0803@cs.utexas.edu>
+Date:   Mon Jul 21 12:24:31 2014 -0500
+
+    Wrote valid and fixed constructor
+
+commit 908fecb97a3166b2bfb0e7ef3bb3e69a381b991c
+Author: Andrew Vohl <vohl0803@cs.utexas.edu>
+Date:   Sun Jul 20 16:58:51 2014 -0500
+
+    Implemented our constructor for my_deque
+
+commit 6609c3d8dee6e9cf75952154d96a10b28ebaace3
+Author: Andrew Vohl <vohl0803@cs.utexas.edu>
+Date:   Sun Jul 20 14:14:39 2014 -0500
+
+    Created makefile closes, and ran given code
+    closes #12; closes #3; closes #4; closes #7;
+
+commit 9ab0c90dd8f66d77deea9375443c5a819419d9fc
+Author: vohl0803 <acvohl@gmail.com>
+Date:   Sun Jul 20 13:35:23 2014 -0500
+
+    Added files to repo
+
+commit 7594ae39eac60f223be8bbe1e68d0b97144754d4
+Author: vohl0803 <acvohl@gmail.com>
+Date:   Sat Jul 19 18:01:38 2014 -0500
+
+    cs378-deque

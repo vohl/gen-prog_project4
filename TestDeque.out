@@ -1,0 +1,1401 @@
+Running main() from gtest_main.cc
+[==========] Running 540 tests from 4 test cases.
+[----------] Global test environment set-up.
+[----------] 135 tests from TestDeque/0, where TypeParam = std::deque<int, std::allocator<int> >
+[ RUN      ] TestDeque/0.Empty_1
+[       OK ] TestDeque/0.Empty_1 (20 ms)
+[ RUN      ] TestDeque/0.Empty_2
+[       OK ] TestDeque/0.Empty_2 (5 ms)
+[ RUN      ] TestDeque/0.Empty_3
+[       OK ] TestDeque/0.Empty_3 (6 ms)
+[ RUN      ] TestDeque/0.Empty_4
+[       OK ] TestDeque/0.Empty_4 (4 ms)
+[ RUN      ] TestDeque/0.Assignment_1
+[       OK ] TestDeque/0.Assignment_1 (14 ms)
+[ RUN      ] TestDeque/0.Assignment_2
+[       OK ] TestDeque/0.Assignment_2 (15 ms)
+[ RUN      ] TestDeque/0.Assignment_3
+[       OK ] TestDeque/0.Assignment_3 (8 ms)
+[ RUN      ] TestDeque/0.Assignment_4
+[       OK ] TestDeque/0.Assignment_4 (3 ms)
+[ RUN      ] TestDeque/0.Indexing_1
+[       OK ] TestDeque/0.Indexing_1 (4 ms)
+[ RUN      ] TestDeque/0.Indexing_2
+[       OK ] TestDeque/0.Indexing_2 (5 ms)
+[ RUN      ] TestDeque/0.Indexing_3
+[       OK ] TestDeque/0.Indexing_3 (3 ms)
+[ RUN      ] TestDeque/0.Indexing_4
+[       OK ] TestDeque/0.Indexing_4 (3 ms)
+[ RUN      ] TestDeque/0.Indexing_5
+[       OK ] TestDeque/0.Indexing_5 (2 ms)
+[ RUN      ] TestDeque/0.At_1
+[       OK ] TestDeque/0.At_1 (3 ms)
+[ RUN      ] TestDeque/0.At_2
+[       OK ] TestDeque/0.At_2 (2 ms)
+[ RUN      ] TestDeque/0.At_3
+[       OK ] TestDeque/0.At_3 (5 ms)
+[ RUN      ] TestDeque/0.At_4
+[       OK ] TestDeque/0.At_4 (2 ms)
+[ RUN      ] TestDeque/0.Back_1
+[       OK ] TestDeque/0.Back_1 (3 ms)
+[ RUN      ] TestDeque/0.Back_2
+[       OK ] TestDeque/0.Back_2 (3 ms)
+[ RUN      ] TestDeque/0.Back_3
+[       OK ] TestDeque/0.Back_3 (3 ms)
+[ RUN      ] TestDeque/0.Back_4
+[       OK ] TestDeque/0.Back_4 (3 ms)
+[ RUN      ] TestDeque/0.Begin_1
+[       OK ] TestDeque/0.Begin_1 (2 ms)
+[ RUN      ] TestDeque/0.Begin_2
+[       OK ] TestDeque/0.Begin_2 (3 ms)
+[ RUN      ] TestDeque/0.Begin_3
+[       OK ] TestDeque/0.Begin_3 (3 ms)
+[ RUN      ] TestDeque/0.Begin_4
+[       OK ] TestDeque/0.Begin_4 (4 ms)
+[ RUN      ] TestDeque/0.Begin_5
+[       OK ] TestDeque/0.Begin_5 (3 ms)
+[ RUN      ] TestDeque/0.Clear_1
+[       OK ] TestDeque/0.Clear_1 (4 ms)
+[ RUN      ] TestDeque/0.Clear_2
+[       OK ] TestDeque/0.Clear_2 (2 ms)
+[ RUN      ] TestDeque/0.Clear_3
+[       OK ] TestDeque/0.Clear_3 (2 ms)
+[ RUN      ] TestDeque/0.Clear_4
+[       OK ] TestDeque/0.Clear_4 (4 ms)
+[ RUN      ] TestDeque/0.End_1
+[       OK ] TestDeque/0.End_1 (3 ms)
+[ RUN      ] TestDeque/0.End_2
+[       OK ] TestDeque/0.End_2 (3 ms)
+[ RUN      ] TestDeque/0.End_3
+[       OK ] TestDeque/0.End_3 (3 ms)
+[ RUN      ] TestDeque/0.End_4
+[       OK ] TestDeque/0.End_4 (3 ms)
+[ RUN      ] TestDeque/0.End_5
+[       OK ] TestDeque/0.End_5 (3 ms)
+[ RUN      ] TestDeque/0.Erase_1
+[       OK ] TestDeque/0.Erase_1 (5 ms)
+[ RUN      ] TestDeque/0.Erase_2
+[       OK ] TestDeque/0.Erase_2 (4 ms)
+[ RUN      ] TestDeque/0.Erase_3
+[       OK ] TestDeque/0.Erase_3 (8 ms)
+[ RUN      ] TestDeque/0.Erase_4
+[       OK ] TestDeque/0.Erase_4 (2 ms)
+[ RUN      ] TestDeque/0.Front_1
+[       OK ] TestDeque/0.Front_1 (3 ms)
+[ RUN      ] TestDeque/0.Front_2
+[       OK ] TestDeque/0.Front_2 (2 ms)
+[ RUN      ] TestDeque/0.Front_3
+[       OK ] TestDeque/0.Front_3 (2 ms)
+[ RUN      ] TestDeque/0.Front_4
+[       OK ] TestDeque/0.Front_4 (3 ms)
+[ RUN      ] TestDeque/0.Insert_1
+[       OK ] TestDeque/0.Insert_1 (5 ms)
+[ RUN      ] TestDeque/0.Insert_2
+[       OK ] TestDeque/0.Insert_2 (4 ms)
+[ RUN      ] TestDeque/0.Insert_3
+[       OK ] TestDeque/0.Insert_3 (8 ms)
+[ RUN      ] TestDeque/0.Insert_4
+[       OK ] TestDeque/0.Insert_4 (2 ms)
+[ RUN      ] TestDeque/0.Pop_Back_1
+[       OK ] TestDeque/0.Pop_Back_1 (2 ms)
+[ RUN      ] TestDeque/0.Pop_Back_2
+[       OK ] TestDeque/0.Pop_Back_2 (4 ms)
+[ RUN      ] TestDeque/0.Pop_Back_3
+[       OK ] TestDeque/0.Pop_Back_3 (3 ms)
+[ RUN      ] TestDeque/0.Pop_Back_4
+[       OK ] TestDeque/0.Pop_Back_4 (3 ms)
+[ RUN      ] TestDeque/0.Pop_Font_1
+[       OK ] TestDeque/0.Pop_Font_1 (3 ms)
+[ RUN      ] TestDeque/0.Pop_Font_2
+[       OK ] TestDeque/0.Pop_Font_2 (3 ms)
+[ RUN      ] TestDeque/0.Pop_Font_3
+[       OK ] TestDeque/0.Pop_Font_3 (3 ms)
+[ RUN      ] TestDeque/0.Pop_Font_4
+[       OK ] TestDeque/0.Pop_Font_4 (3 ms)
+[ RUN      ] TestDeque/0.Push_Back_1
+[       OK ] TestDeque/0.Push_Back_1 (3 ms)
+[ RUN      ] TestDeque/0.Push_Back_2
+[       OK ] TestDeque/0.Push_Back_2 (3 ms)
+[ RUN      ] TestDeque/0.Push_Back_3
+[       OK ] TestDeque/0.Push_Back_3 (4 ms)
+[ RUN      ] TestDeque/0.Push_Back_4
+[       OK ] TestDeque/0.Push_Back_4 (4 ms)
+[ RUN      ] TestDeque/0.Push_Front_1
+[       OK ] TestDeque/0.Push_Front_1 (3 ms)
+[ RUN      ] TestDeque/0.Push_Font_2
+[       OK ] TestDeque/0.Push_Font_2 (2 ms)
+[ RUN      ] TestDeque/0.Push_Font_3
+[       OK ] TestDeque/0.Push_Font_3 (3 ms)
+[ RUN      ] TestDeque/0.Push_Font_4
+[       OK ] TestDeque/0.Push_Font_4 (3 ms)
+[ RUN      ] TestDeque/0.Resize_1
+[       OK ] TestDeque/0.Resize_1 (8 ms)
+[ RUN      ] TestDeque/0.Resize_2
+[       OK ] TestDeque/0.Resize_2 (3 ms)
+[ RUN      ] TestDeque/0.Resize_3
+[       OK ] TestDeque/0.Resize_3 (2 ms)
+[ RUN      ] TestDeque/0.Resize_4
+[       OK ] TestDeque/0.Resize_4 (3 ms)
+[ RUN      ] TestDeque/0.Size_1
+[       OK ] TestDeque/0.Size_1 (3 ms)
+[ RUN      ] TestDeque/0.Size_2
+[       OK ] TestDeque/0.Size_2 (2 ms)
+[ RUN      ] TestDeque/0.Size_3
+[       OK ] TestDeque/0.Size_3 (2 ms)
+[ RUN      ] TestDeque/0.Size_4
+[       OK ] TestDeque/0.Size_4 (2 ms)
+[ RUN      ] TestDeque/0.Size_5
+[       OK ] TestDeque/0.Size_5 (2 ms)
+[ RUN      ] TestDeque/0.Size_6
+[       OK ] TestDeque/0.Size_6 (3 ms)
+[ RUN      ] TestDeque/0.Swap_1
+[       OK ] TestDeque/0.Swap_1 (10 ms)
+[ RUN      ] TestDeque/0.Swap_2
+[       OK ] TestDeque/0.Swap_2 (5 ms)
+[ RUN      ] TestDeque/0.Swap_3
+[       OK ] TestDeque/0.Swap_3 (5 ms)
+[ RUN      ] TestDeque/0.Swap_4
+[       OK ] TestDeque/0.Swap_4 (4 ms)
+[ RUN      ] TestDeque/0.Equality_1
+[       OK ] TestDeque/0.Equality_1 (6 ms)
+[ RUN      ] TestDeque/0.Equality_2
+[       OK ] TestDeque/0.Equality_2 (5 ms)
+[ RUN      ] TestDeque/0.Equality_3
+[       OK ] TestDeque/0.Equality_3 (2 ms)
+[ RUN      ] TestDeque/0.Less_Than_1
+[       OK ] TestDeque/0.Less_Than_1 (7 ms)
+[ RUN      ] TestDeque/0.Less_Than_2
+[       OK ] TestDeque/0.Less_Than_2 (4 ms)
+[ RUN      ] TestDeque/0.Less_Than_3
+[       OK ] TestDeque/0.Less_Than_3 (5 ms)
+[ RUN      ] TestDeque/0.I_Equals_1
+[       OK ] TestDeque/0.I_Equals_1 (3 ms)
+[ RUN      ] TestDeque/0.I_Equals_2
+[       OK ] TestDeque/0.I_Equals_2 (2 ms)
+[ RUN      ] TestDeque/0.I_Equals_3
+[       OK ] TestDeque/0.I_Equals_3 (3 ms)
+[ RUN      ] TestDeque/0.I_Not_Equals_1
+[       OK ] TestDeque/0.I_Not_Equals_1 (4 ms)
+[ RUN      ] TestDeque/0.I_Not_Equals_2
+[       OK ] TestDeque/0.I_Not_Equals_2 (3 ms)
+[ RUN      ] TestDeque/0.I_Not_Equals_3
+[       OK ] TestDeque/0.I_Not_Equals_3 (3 ms)
+[ RUN      ] TestDeque/0.I_Plus_1
+[       OK ] TestDeque/0.I_Plus_1 (3 ms)
+[ RUN      ] TestDeque/0.I_Plus_2
+[       OK ] TestDeque/0.I_Plus_2 (3 ms)
+[ RUN      ] TestDeque/0.I_Plus_3
+[       OK ] TestDeque/0.I_Plus_3 (3 ms)
+[ RUN      ] TestDeque/0.I_Minus_1
+[       OK ] TestDeque/0.I_Minus_1 (3 ms)
+[ RUN      ] TestDeque/0.I_Minus_2
+[       OK ] TestDeque/0.I_Minus_2 (3 ms)
+[ RUN      ] TestDeque/0.I_Minus_3
+[       OK ] TestDeque/0.I_Minus_3 (4 ms)
+[ RUN      ] TestDeque/0.I_Dereference_1
+[       OK ] TestDeque/0.I_Dereference_1 (3 ms)
+[ RUN      ] TestDeque/0.I_Dereference_2
+[       OK ] TestDeque/0.I_Dereference_2 (3 ms)
+[ RUN      ] TestDeque/0.I_Dereference_3
+[       OK ] TestDeque/0.I_Dereference_3 (3 ms)
+[ RUN      ] TestDeque/0.I_Increment_1
+[       OK ] TestDeque/0.I_Increment_1 (3 ms)
+[ RUN      ] TestDeque/0.I_Increment_2
+[       OK ] TestDeque/0.I_Increment_2 (3 ms)
+[ RUN      ] TestDeque/0.I_Increment_3
+[       OK ] TestDeque/0.I_Increment_3 (4 ms)
+[ RUN      ] TestDeque/0.I_Decrement_1
+[       OK ] TestDeque/0.I_Decrement_1 (3 ms)
+[ RUN      ] TestDeque/0.I_Decrement_2
+[       OK ] TestDeque/0.I_Decrement_2 (3 ms)
+[ RUN      ] TestDeque/0.I_Plus_Equals_1
+[       OK ] TestDeque/0.I_Plus_Equals_1 (3 ms)
+[ RUN      ] TestDeque/0.I_Plus_Equals_2
+[       OK ] TestDeque/0.I_Plus_Equals_2 (3 ms)
+[ RUN      ] TestDeque/0.I_Plus_Equals_3
+[       OK ] TestDeque/0.I_Plus_Equals_3 (3 ms)
+[ RUN      ] TestDeque/0.I_Minus_Equals_1
+[       OK ] TestDeque/0.I_Minus_Equals_1 (3 ms)
+[ RUN      ] TestDeque/0.I_Minus_Equals_2
+[       OK ] TestDeque/0.I_Minus_Equals_2 (2 ms)
+[ RUN      ] TestDeque/0.I_Minus_Equals_3
+[       OK ] TestDeque/0.I_Minus_Equals_3 (2 ms)
+[ RUN      ] TestDeque/0.CI_Equals_1
+[       OK ] TestDeque/0.CI_Equals_1 (3 ms)
+[ RUN      ] TestDeque/0.CI_Equals_2
+[       OK ] TestDeque/0.CI_Equals_2 (3 ms)
+[ RUN      ] TestDeque/0.CI_Equals_3
+[       OK ] TestDeque/0.CI_Equals_3 (3 ms)
+[ RUN      ] TestDeque/0.CI_Not_Equals_1
+[       OK ] TestDeque/0.CI_Not_Equals_1 (3 ms)
+[ RUN      ] TestDeque/0.CI_Not_Equals_2
+[       OK ] TestDeque/0.CI_Not_Equals_2 (3 ms)
+[ RUN      ] TestDeque/0.CI_Not_Equals_3
+[       OK ] TestDeque/0.CI_Not_Equals_3 (3 ms)
+[ RUN      ] TestDeque/0.CI_Plus_1
+[       OK ] TestDeque/0.CI_Plus_1 (3 ms)
+[ RUN      ] TestDeque/0.CI_Plus_2
+[       OK ] TestDeque/0.CI_Plus_2 (3 ms)
+[ RUN      ] TestDeque/0.CI_Plus_3
+[       OK ] TestDeque/0.CI_Plus_3 (3 ms)
+[ RUN      ] TestDeque/0.CI_Minus_1
+[       OK ] TestDeque/0.CI_Minus_1 (3 ms)
+[ RUN      ] TestDeque/0.CI_Minus_2
+[       OK ] TestDeque/0.CI_Minus_2 (3 ms)
+[ RUN      ] TestDeque/0.CI_Minus_3
+[       OK ] TestDeque/0.CI_Minus_3 (3 ms)
+[ RUN      ] TestDeque/0.CI_Dereference_1
+[       OK ] TestDeque/0.CI_Dereference_1 (3 ms)
+[ RUN      ] TestDeque/0.CI_Dereference_2
+[       OK ] TestDeque/0.CI_Dereference_2 (3 ms)
+[ RUN      ] TestDeque/0.CI_Dereference_3
+[       OK ] TestDeque/0.CI_Dereference_3 (3 ms)
+[ RUN      ] TestDeque/0.CI_Increment_1
+[       OK ] TestDeque/0.CI_Increment_1 (3 ms)
+[ RUN      ] TestDeque/0.CI_Increment_2
+[       OK ] TestDeque/0.CI_Increment_2 (3 ms)
+[ RUN      ] TestDeque/0.CI_Increment_3
+[       OK ] TestDeque/0.CI_Increment_3 (4 ms)
+[ RUN      ] TestDeque/0.CI_Decrement_1
+[       OK ] TestDeque/0.CI_Decrement_1 (3 ms)
+[ RUN      ] TestDeque/0.CI_Decrement_2
+[       OK ] TestDeque/0.CI_Decrement_2 (4 ms)
+[ RUN      ] TestDeque/0.CI_Plus_Equals_1
+[       OK ] TestDeque/0.CI_Plus_Equals_1 (3 ms)
+[ RUN      ] TestDeque/0.CI_Plus_Equals_2
+[       OK ] TestDeque/0.CI_Plus_Equals_2 (3 ms)
+[ RUN      ] TestDeque/0.CI_Plus_Equals_3
+[       OK ] TestDeque/0.CI_Plus_Equals_3 (3 ms)
+[ RUN      ] TestDeque/0.CI_Minus_Equals_1
+[       OK ] TestDeque/0.CI_Minus_Equals_1 (3 ms)
+[ RUN      ] TestDeque/0.CI_Minus_Equals_2
+[       OK ] TestDeque/0.CI_Minus_Equals_2 (3 ms)
+[ RUN      ] TestDeque/0.CI_Minus_Equals_3
+[       OK ] TestDeque/0.CI_Minus_Equals_3 (3 ms)
+[----------] 135 tests from TestDeque/0 (525 ms total)
+
+[----------] 135 tests from TestDeque/1, where TypeParam = std::deque<double, std::allocator<double> >
+[ RUN      ] TestDeque/1.Empty_1
+[       OK ] TestDeque/1.Empty_1 (13 ms)
+[ RUN      ] TestDeque/1.Empty_2
+[       OK ] TestDeque/1.Empty_2 (5 ms)
+[ RUN      ] TestDeque/1.Empty_3
+[       OK ] TestDeque/1.Empty_3 (7 ms)
+[ RUN      ] TestDeque/1.Empty_4
+[       OK ] TestDeque/1.Empty_4 (4 ms)
+[ RUN      ] TestDeque/1.Assignment_1
+[       OK ] TestDeque/1.Assignment_1 (12 ms)
+[ RUN      ] TestDeque/1.Assignment_2
+[       OK ] TestDeque/1.Assignment_2 (16 ms)
+[ RUN      ] TestDeque/1.Assignment_3
+[       OK ] TestDeque/1.Assignment_3 (9 ms)
+[ RUN      ] TestDeque/1.Assignment_4
+[       OK ] TestDeque/1.Assignment_4 (3 ms)
+[ RUN      ] TestDeque/1.Indexing_1
+[       OK ] TestDeque/1.Indexing_1 (3 ms)
+[ RUN      ] TestDeque/1.Indexing_2
+[       OK ] TestDeque/1.Indexing_2 (4 ms)
+[ RUN      ] TestDeque/1.Indexing_3
+[       OK ] TestDeque/1.Indexing_3 (2 ms)
+[ RUN      ] TestDeque/1.Indexing_4
+[       OK ] TestDeque/1.Indexing_4 (2 ms)
+[ RUN      ] TestDeque/1.Indexing_5
+[       OK ] TestDeque/1.Indexing_5 (3 ms)
+[ RUN      ] TestDeque/1.At_1
+[       OK ] TestDeque/1.At_1 (3 ms)
+[ RUN      ] TestDeque/1.At_2
+[       OK ] TestDeque/1.At_2 (3 ms)
+[ RUN      ] TestDeque/1.At_3
+[       OK ] TestDeque/1.At_3 (5 ms)
+[ RUN      ] TestDeque/1.At_4
+[       OK ] TestDeque/1.At_4 (3 ms)
+[ RUN      ] TestDeque/1.Back_1
+[       OK ] TestDeque/1.Back_1 (3 ms)
+[ RUN      ] TestDeque/1.Back_2
+[       OK ] TestDeque/1.Back_2 (3 ms)
+[ RUN      ] TestDeque/1.Back_3
+[       OK ] TestDeque/1.Back_3 (3 ms)
+[ RUN      ] TestDeque/1.Back_4
+[       OK ] TestDeque/1.Back_4 (3 ms)
+[ RUN      ] TestDeque/1.Begin_1
+[       OK ] TestDeque/1.Begin_1 (2 ms)
+[ RUN      ] TestDeque/1.Begin_2
+[       OK ] TestDeque/1.Begin_2 (3 ms)
+[ RUN      ] TestDeque/1.Begin_3
+[       OK ] TestDeque/1.Begin_3 (3 ms)
+[ RUN      ] TestDeque/1.Begin_4
+[       OK ] TestDeque/1.Begin_4 (4 ms)
+[ RUN      ] TestDeque/1.Begin_5
+[       OK ] TestDeque/1.Begin_5 (3 ms)
+[ RUN      ] TestDeque/1.Clear_1
+[       OK ] TestDeque/1.Clear_1 (3 ms)
+[ RUN      ] TestDeque/1.Clear_2
+[       OK ] TestDeque/1.Clear_2 (3 ms)
+[ RUN      ] TestDeque/1.Clear_3
+[       OK ] TestDeque/1.Clear_3 (3 ms)
+[ RUN      ] TestDeque/1.Clear_4
+[       OK ] TestDeque/1.Clear_4 (3 ms)
+[ RUN      ] TestDeque/1.End_1
+[       OK ] TestDeque/1.End_1 (3 ms)
+[ RUN      ] TestDeque/1.End_2
+[       OK ] TestDeque/1.End_2 (3 ms)
+[ RUN      ] TestDeque/1.End_3
+[       OK ] TestDeque/1.End_3 (3 ms)
+[ RUN      ] TestDeque/1.End_4
+[       OK ] TestDeque/1.End_4 (3 ms)
+[ RUN      ] TestDeque/1.End_5
+[       OK ] TestDeque/1.End_5 (3 ms)
+[ RUN      ] TestDeque/1.Erase_1
+[       OK ] TestDeque/1.Erase_1 (5 ms)
+[ RUN      ] TestDeque/1.Erase_2
+[       OK ] TestDeque/1.Erase_2 (4 ms)
+[ RUN      ] TestDeque/1.Erase_3
+[       OK ] TestDeque/1.Erase_3 (9 ms)
+[ RUN      ] TestDeque/1.Erase_4
+[       OK ] TestDeque/1.Erase_4 (2 ms)
+[ RUN      ] TestDeque/1.Front_1
+[       OK ] TestDeque/1.Front_1 (3 ms)
+[ RUN      ] TestDeque/1.Front_2
+[       OK ] TestDeque/1.Front_2 (2 ms)
+[ RUN      ] TestDeque/1.Front_3
+[       OK ] TestDeque/1.Front_3 (2 ms)
+[ RUN      ] TestDeque/1.Front_4
+[       OK ] TestDeque/1.Front_4 (2 ms)
+[ RUN      ] TestDeque/1.Insert_1
+[       OK ] TestDeque/1.Insert_1 (4 ms)
+[ RUN      ] TestDeque/1.Insert_2
+[       OK ] TestDeque/1.Insert_2 (4 ms)
+[ RUN      ] TestDeque/1.Insert_3
+[       OK ] TestDeque/1.Insert_3 (8 ms)
+[ RUN      ] TestDeque/1.Insert_4
+[       OK ] TestDeque/1.Insert_4 (3 ms)
+[ RUN      ] TestDeque/1.Pop_Back_1
+[       OK ] TestDeque/1.Pop_Back_1 (2 ms)
+[ RUN      ] TestDeque/1.Pop_Back_2
+[       OK ] TestDeque/1.Pop_Back_2 (3 ms)
+[ RUN      ] TestDeque/1.Pop_Back_3
+[       OK ] TestDeque/1.Pop_Back_3 (4 ms)
+[ RUN      ] TestDeque/1.Pop_Back_4
+[       OK ] TestDeque/1.Pop_Back_4 (3 ms)
+[ RUN      ] TestDeque/1.Pop_Font_1
+[       OK ] TestDeque/1.Pop_Font_1 (3 ms)
+[ RUN      ] TestDeque/1.Pop_Font_2
+[       OK ] TestDeque/1.Pop_Font_2 (3 ms)
+[ RUN      ] TestDeque/1.Pop_Font_3
+[       OK ] TestDeque/1.Pop_Font_3 (4 ms)
+[ RUN      ] TestDeque/1.Pop_Font_4
+[       OK ] TestDeque/1.Pop_Font_4 (3 ms)
+[ RUN      ] TestDeque/1.Push_Back_1
+[       OK ] TestDeque/1.Push_Back_1 (3 ms)
+[ RUN      ] TestDeque/1.Push_Back_2
+[       OK ] TestDeque/1.Push_Back_2 (3 ms)
+[ RUN      ] TestDeque/1.Push_Back_3
+[       OK ] TestDeque/1.Push_Back_3 (3 ms)
+[ RUN      ] TestDeque/1.Push_Back_4
+[       OK ] TestDeque/1.Push_Back_4 (4 ms)
+[ RUN      ] TestDeque/1.Push_Front_1
+[       OK ] TestDeque/1.Push_Front_1 (3 ms)
+[ RUN      ] TestDeque/1.Push_Font_2
+[       OK ] TestDeque/1.Push_Font_2 (2 ms)
+[ RUN      ] TestDeque/1.Push_Font_3
+[       OK ] TestDeque/1.Push_Font_3 (3 ms)
+[ RUN      ] TestDeque/1.Push_Font_4
+[       OK ] TestDeque/1.Push_Font_4 (3 ms)
+[ RUN      ] TestDeque/1.Resize_1
+[       OK ] TestDeque/1.Resize_1 (8 ms)
+[ RUN      ] TestDeque/1.Resize_2
+[       OK ] TestDeque/1.Resize_2 (2 ms)
+[ RUN      ] TestDeque/1.Resize_3
+[       OK ] TestDeque/1.Resize_3 (2 ms)
+[ RUN      ] TestDeque/1.Resize_4
+[       OK ] TestDeque/1.Resize_4 (3 ms)
+[ RUN      ] TestDeque/1.Size_1
+[       OK ] TestDeque/1.Size_1 (2 ms)
+[ RUN      ] TestDeque/1.Size_2
+[       OK ] TestDeque/1.Size_2 (2 ms)
+[ RUN      ] TestDeque/1.Size_3
+[       OK ] TestDeque/1.Size_3 (3 ms)
+[ RUN      ] TestDeque/1.Size_4
+[       OK ] TestDeque/1.Size_4 (2 ms)
+[ RUN      ] TestDeque/1.Size_5
+[       OK ] TestDeque/1.Size_5 (2 ms)
+[ RUN      ] TestDeque/1.Size_6
+[       OK ] TestDeque/1.Size_6 (3 ms)
+[ RUN      ] TestDeque/1.Swap_1
+[       OK ] TestDeque/1.Swap_1 (9 ms)
+[ RUN      ] TestDeque/1.Swap_2
+[       OK ] TestDeque/1.Swap_2 (5 ms)
+[ RUN      ] TestDeque/1.Swap_3
+[       OK ] TestDeque/1.Swap_3 (5 ms)
+[ RUN      ] TestDeque/1.Swap_4
+[       OK ] TestDeque/1.Swap_4 (4 ms)
+[ RUN      ] TestDeque/1.Equality_1
+[       OK ] TestDeque/1.Equality_1 (5 ms)
+[ RUN      ] TestDeque/1.Equality_2
+[       OK ] TestDeque/1.Equality_2 (5 ms)
+[ RUN      ] TestDeque/1.Equality_3
+[       OK ] TestDeque/1.Equality_3 (2 ms)
+[ RUN      ] TestDeque/1.Less_Than_1
+[       OK ] TestDeque/1.Less_Than_1 (7 ms)
+[ RUN      ] TestDeque/1.Less_Than_2
+[       OK ] TestDeque/1.Less_Than_2 (5 ms)
+[ RUN      ] TestDeque/1.Less_Than_3
+[       OK ] TestDeque/1.Less_Than_3 (4 ms)
+[ RUN      ] TestDeque/1.I_Equals_1
+[       OK ] TestDeque/1.I_Equals_1 (3 ms)
+[ RUN      ] TestDeque/1.I_Equals_2
+[       OK ] TestDeque/1.I_Equals_2 (2 ms)
+[ RUN      ] TestDeque/1.I_Equals_3
+[       OK ] TestDeque/1.I_Equals_3 (4 ms)
+[ RUN      ] TestDeque/1.I_Not_Equals_1
+[       OK ] TestDeque/1.I_Not_Equals_1 (3 ms)
+[ RUN      ] TestDeque/1.I_Not_Equals_2
+[       OK ] TestDeque/1.I_Not_Equals_2 (3 ms)
+[ RUN      ] TestDeque/1.I_Not_Equals_3
+[       OK ] TestDeque/1.I_Not_Equals_3 (3 ms)
+[ RUN      ] TestDeque/1.I_Plus_1
+[       OK ] TestDeque/1.I_Plus_1 (3 ms)
+[ RUN      ] TestDeque/1.I_Plus_2
+[       OK ] TestDeque/1.I_Plus_2 (3 ms)
+[ RUN      ] TestDeque/1.I_Plus_3
+[       OK ] TestDeque/1.I_Plus_3 (3 ms)
+[ RUN      ] TestDeque/1.I_Minus_1
+[       OK ] TestDeque/1.I_Minus_1 (3 ms)
+[ RUN      ] TestDeque/1.I_Minus_2
+[       OK ] TestDeque/1.I_Minus_2 (3 ms)
+[ RUN      ] TestDeque/1.I_Minus_3
+[       OK ] TestDeque/1.I_Minus_3 (4 ms)
+[ RUN      ] TestDeque/1.I_Dereference_1
+[       OK ] TestDeque/1.I_Dereference_1 (4 ms)
+[ RUN      ] TestDeque/1.I_Dereference_2
+[       OK ] TestDeque/1.I_Dereference_2 (3 ms)
+[ RUN      ] TestDeque/1.I_Dereference_3
+[       OK ] TestDeque/1.I_Dereference_3 (3 ms)
+[ RUN      ] TestDeque/1.I_Increment_1
+[       OK ] TestDeque/1.I_Increment_1 (3 ms)
+[ RUN      ] TestDeque/1.I_Increment_2
+[       OK ] TestDeque/1.I_Increment_2 (3 ms)
+[ RUN      ] TestDeque/1.I_Increment_3
+[       OK ] TestDeque/1.I_Increment_3 (3 ms)
+[ RUN      ] TestDeque/1.I_Decrement_1
+[       OK ] TestDeque/1.I_Decrement_1 (3 ms)
+[ RUN      ] TestDeque/1.I_Decrement_2
+[       OK ] TestDeque/1.I_Decrement_2 (4 ms)
+[ RUN      ] TestDeque/1.I_Plus_Equals_1
+[       OK ] TestDeque/1.I_Plus_Equals_1 (3 ms)
+[ RUN      ] TestDeque/1.I_Plus_Equals_2
+[       OK ] TestDeque/1.I_Plus_Equals_2 (3 ms)
+[ RUN      ] TestDeque/1.I_Plus_Equals_3
+[       OK ] TestDeque/1.I_Plus_Equals_3 (3 ms)
+[ RUN      ] TestDeque/1.I_Minus_Equals_1
+[       OK ] TestDeque/1.I_Minus_Equals_1 (3 ms)
+[ RUN      ] TestDeque/1.I_Minus_Equals_2
+[       OK ] TestDeque/1.I_Minus_Equals_2 (3 ms)
+[ RUN      ] TestDeque/1.I_Minus_Equals_3
+[       OK ] TestDeque/1.I_Minus_Equals_3 (3 ms)
+[ RUN      ] TestDeque/1.CI_Equals_1
+[       OK ] TestDeque/1.CI_Equals_1 (3 ms)
+[ RUN      ] TestDeque/1.CI_Equals_2
+[       OK ] TestDeque/1.CI_Equals_2 (3 ms)
+[ RUN      ] TestDeque/1.CI_Equals_3
+[       OK ] TestDeque/1.CI_Equals_3 (3 ms)
+[ RUN      ] TestDeque/1.CI_Not_Equals_1
+[       OK ] TestDeque/1.CI_Not_Equals_1 (4 ms)
+[ RUN      ] TestDeque/1.CI_Not_Equals_2
+[       OK ] TestDeque/1.CI_Not_Equals_2 (3 ms)
+[ RUN      ] TestDeque/1.CI_Not_Equals_3
+[       OK ] TestDeque/1.CI_Not_Equals_3 (2 ms)
+[ RUN      ] TestDeque/1.CI_Plus_1
+[       OK ] TestDeque/1.CI_Plus_1 (3 ms)
+[ RUN      ] TestDeque/1.CI_Plus_2
+[       OK ] TestDeque/1.CI_Plus_2 (3 ms)
+[ RUN      ] TestDeque/1.CI_Plus_3
+[       OK ] TestDeque/1.CI_Plus_3 (3 ms)
+[ RUN      ] TestDeque/1.CI_Minus_1
+[       OK ] TestDeque/1.CI_Minus_1 (3 ms)
+[ RUN      ] TestDeque/1.CI_Minus_2
+[       OK ] TestDeque/1.CI_Minus_2 (3 ms)
+[ RUN      ] TestDeque/1.CI_Minus_3
+[       OK ] TestDeque/1.CI_Minus_3 (4 ms)
+[ RUN      ] TestDeque/1.CI_Dereference_1
+[       OK ] TestDeque/1.CI_Dereference_1 (3 ms)
+[ RUN      ] TestDeque/1.CI_Dereference_2
+[       OK ] TestDeque/1.CI_Dereference_2 (3 ms)
+[ RUN      ] TestDeque/1.CI_Dereference_3
+[       OK ] TestDeque/1.CI_Dereference_3 (3 ms)
+[ RUN      ] TestDeque/1.CI_Increment_1
+[       OK ] TestDeque/1.CI_Increment_1 (3 ms)
+[ RUN      ] TestDeque/1.CI_Increment_2
+[       OK ] TestDeque/1.CI_Increment_2 (3 ms)
+[ RUN      ] TestDeque/1.CI_Increment_3
+[       OK ] TestDeque/1.CI_Increment_3 (4 ms)
+[ RUN      ] TestDeque/1.CI_Decrement_1
+[       OK ] TestDeque/1.CI_Decrement_1 (3 ms)
+[ RUN      ] TestDeque/1.CI_Decrement_2
+[       OK ] TestDeque/1.CI_Decrement_2 (3 ms)
+[ RUN      ] TestDeque/1.CI_Plus_Equals_1
+[       OK ] TestDeque/1.CI_Plus_Equals_1 (3 ms)
+[ RUN      ] TestDeque/1.CI_Plus_Equals_2
+[       OK ] TestDeque/1.CI_Plus_Equals_2 (3 ms)
+[ RUN      ] TestDeque/1.CI_Plus_Equals_3
+[       OK ] TestDeque/1.CI_Plus_Equals_3 (2 ms)
+[ RUN      ] TestDeque/1.CI_Minus_Equals_1
+[       OK ] TestDeque/1.CI_Minus_Equals_1 (3 ms)
+[ RUN      ] TestDeque/1.CI_Minus_Equals_2
+[       OK ] TestDeque/1.CI_Minus_Equals_2 (3 ms)
+[ RUN      ] TestDeque/1.CI_Minus_Equals_3
+[       OK ] TestDeque/1.CI_Minus_Equals_3 (3 ms)
+[----------] 135 tests from TestDeque/1 (505 ms total)
+
+[----------] 135 tests from TestDeque/2, where TypeParam = my_deque<int, std::allocator<int> >
+[ RUN      ] TestDeque/2.Empty_1
+[       OK ] TestDeque/2.Empty_1 (5 ms)
+[ RUN      ] TestDeque/2.Empty_2
+[       OK ] TestDeque/2.Empty_2 (3 ms)
+[ RUN      ] TestDeque/2.Empty_3
+[       OK ] TestDeque/2.Empty_3 (13 ms)
+[ RUN      ] TestDeque/2.Empty_4
+[       OK ] TestDeque/2.Empty_4 (6 ms)
+[ RUN      ] TestDeque/2.Assignment_1
+[       OK ] TestDeque/2.Assignment_1 (12 ms)
+[ RUN      ] TestDeque/2.Assignment_2
+[       OK ] TestDeque/2.Assignment_2 (8 ms)
+[ RUN      ] TestDeque/2.Assignment_3
+[       OK ] TestDeque/2.Assignment_3 (6 ms)
+[ RUN      ] TestDeque/2.Assignment_4
+[       OK ] TestDeque/2.Assignment_4 (6 ms)
+[ RUN      ] TestDeque/2.Indexing_1
+[       OK ] TestDeque/2.Indexing_1 (3 ms)
+[ RUN      ] TestDeque/2.Indexing_2
+[       OK ] TestDeque/2.Indexing_2 (5 ms)
+[ RUN      ] TestDeque/2.Indexing_3
+[       OK ] TestDeque/2.Indexing_3 (5 ms)
+[ RUN      ] TestDeque/2.Indexing_4
+[       OK ] TestDeque/2.Indexing_4 (5 ms)
+[ RUN      ] TestDeque/2.Indexing_5
+[       OK ] TestDeque/2.Indexing_5 (3 ms)
+[ RUN      ] TestDeque/2.At_1
+[       OK ] TestDeque/2.At_1 (3 ms)
+[ RUN      ] TestDeque/2.At_2
+[       OK ] TestDeque/2.At_2 (3 ms)
+[ RUN      ] TestDeque/2.At_3
+[       OK ] TestDeque/2.At_3 (9 ms)
+[ RUN      ] TestDeque/2.At_4
+[       OK ] TestDeque/2.At_4 (3 ms)
+[ RUN      ] TestDeque/2.Back_1
+[       OK ] TestDeque/2.Back_1 (4 ms)
+[ RUN      ] TestDeque/2.Back_2
+[       OK ] TestDeque/2.Back_2 (3 ms)
+[ RUN      ] TestDeque/2.Back_3
+[       OK ] TestDeque/2.Back_3 (3 ms)
+[ RUN      ] TestDeque/2.Back_4
+[       OK ] TestDeque/2.Back_4 (3 ms)
+[ RUN      ] TestDeque/2.Begin_1
+[       OK ] TestDeque/2.Begin_1 (3 ms)
+[ RUN      ] TestDeque/2.Begin_2
+[       OK ] TestDeque/2.Begin_2 (3 ms)
+[ RUN      ] TestDeque/2.Begin_3
+[       OK ] TestDeque/2.Begin_3 (3 ms)
+[ RUN      ] TestDeque/2.Begin_4
+[       OK ] TestDeque/2.Begin_4 (4 ms)
+[ RUN      ] TestDeque/2.Begin_5
+[       OK ] TestDeque/2.Begin_5 (3 ms)
+[ RUN      ] TestDeque/2.Clear_1
+[       OK ] TestDeque/2.Clear_1 (2 ms)
+[ RUN      ] TestDeque/2.Clear_2
+[       OK ] TestDeque/2.Clear_2 (3 ms)
+[ RUN      ] TestDeque/2.Clear_3
+[       OK ] TestDeque/2.Clear_3 (3 ms)
+[ RUN      ] TestDeque/2.Clear_4
+[       OK ] TestDeque/2.Clear_4 (3 ms)
+[ RUN      ] TestDeque/2.End_1
+[       OK ] TestDeque/2.End_1 (3 ms)
+[ RUN      ] TestDeque/2.End_2
+[       OK ] TestDeque/2.End_2 (3 ms)
+[ RUN      ] TestDeque/2.End_3
+[       OK ] TestDeque/2.End_3 (6 ms)
+[ RUN      ] TestDeque/2.End_4
+[       OK ] TestDeque/2.End_4 (4 ms)
+[ RUN      ] TestDeque/2.End_5
+[       OK ] TestDeque/2.End_5 (3 ms)
+[ RUN      ] TestDeque/2.Erase_1
+[       OK ] TestDeque/2.Erase_1 (5 ms)
+[ RUN      ] TestDeque/2.Erase_2
+[       OK ] TestDeque/2.Erase_2 (3 ms)
+[ RUN      ] TestDeque/2.Erase_3
+[       OK ] TestDeque/2.Erase_3 (3 ms)
+[ RUN      ] TestDeque/2.Erase_4
+[       OK ] TestDeque/2.Erase_4 (3 ms)
+[ RUN      ] TestDeque/2.Front_1
+[       OK ] TestDeque/2.Front_1 (3 ms)
+[ RUN      ] TestDeque/2.Front_2
+[       OK ] TestDeque/2.Front_2 (3 ms)
+[ RUN      ] TestDeque/2.Front_3
+[       OK ] TestDeque/2.Front_3 (3 ms)
+[ RUN      ] TestDeque/2.Front_4
+[       OK ] TestDeque/2.Front_4 (3 ms)
+[ RUN      ] TestDeque/2.Insert_1
+[       OK ] TestDeque/2.Insert_1 (6 ms)
+[ RUN      ] TestDeque/2.Insert_2
+[       OK ] TestDeque/2.Insert_2 (3 ms)
+[ RUN      ] TestDeque/2.Insert_3
+[       OK ] TestDeque/2.Insert_3 (3 ms)
+[ RUN      ] TestDeque/2.Insert_4
+[       OK ] TestDeque/2.Insert_4 (3 ms)
+[ RUN      ] TestDeque/2.Pop_Back_1
+[       OK ] TestDeque/2.Pop_Back_1 (3 ms)
+[ RUN      ] TestDeque/2.Pop_Back_2
+[       OK ] TestDeque/2.Pop_Back_2 (4 ms)
+[ RUN      ] TestDeque/2.Pop_Back_3
+[       OK ] TestDeque/2.Pop_Back_3 (4 ms)
+[ RUN      ] TestDeque/2.Pop_Back_4
+[       OK ] TestDeque/2.Pop_Back_4 (3 ms)
+[ RUN      ] TestDeque/2.Pop_Font_1
+[       OK ] TestDeque/2.Pop_Font_1 (3 ms)
+[ RUN      ] TestDeque/2.Pop_Font_2
+[       OK ] TestDeque/2.Pop_Font_2 (3 ms)
+[ RUN      ] TestDeque/2.Pop_Font_3
+[       OK ] TestDeque/2.Pop_Font_3 (4 ms)
+[ RUN      ] TestDeque/2.Pop_Font_4
+[       OK ] TestDeque/2.Pop_Font_4 (4 ms)
+[ RUN      ] TestDeque/2.Push_Back_1
+[       OK ] TestDeque/2.Push_Back_1 (3 ms)
+[ RUN      ] TestDeque/2.Push_Back_2
+[       OK ] TestDeque/2.Push_Back_2 (4 ms)
+[ RUN      ] TestDeque/2.Push_Back_3
+[       OK ] TestDeque/2.Push_Back_3 (4 ms)
+[ RUN      ] TestDeque/2.Push_Back_4
+[       OK ] TestDeque/2.Push_Back_4 (4 ms)
+[ RUN      ] TestDeque/2.Push_Front_1
+[       OK ] TestDeque/2.Push_Front_1 (3 ms)
+[ RUN      ] TestDeque/2.Push_Font_2
+[       OK ] TestDeque/2.Push_Font_2 (3 ms)
+[ RUN      ] TestDeque/2.Push_Font_3
+[       OK ] TestDeque/2.Push_Font_3 (5 ms)
+[ RUN      ] TestDeque/2.Push_Font_4
+[       OK ] TestDeque/2.Push_Font_4 (4 ms)
+[ RUN      ] TestDeque/2.Resize_1
+[       OK ] TestDeque/2.Resize_1 (3 ms)
+[ RUN      ] TestDeque/2.Resize_2
+[       OK ] TestDeque/2.Resize_2 (5 ms)
+[ RUN      ] TestDeque/2.Resize_3
+[       OK ] TestDeque/2.Resize_3 (2 ms)
+[ RUN      ] TestDeque/2.Resize_4
+[       OK ] TestDeque/2.Resize_4 (3 ms)
+[ RUN      ] TestDeque/2.Size_1
+[       OK ] TestDeque/2.Size_1 (3 ms)
+[ RUN      ] TestDeque/2.Size_2
+[       OK ] TestDeque/2.Size_2 (2 ms)
+[ RUN      ] TestDeque/2.Size_3
+[       OK ] TestDeque/2.Size_3 (2 ms)
+[ RUN      ] TestDeque/2.Size_4
+[       OK ] TestDeque/2.Size_4 (3 ms)
+[ RUN      ] TestDeque/2.Size_5
+[       OK ] TestDeque/2.Size_5 (3 ms)
+[ RUN      ] TestDeque/2.Size_6
+[       OK ] TestDeque/2.Size_6 (3 ms)
+[ RUN      ] TestDeque/2.Swap_1
+[       OK ] TestDeque/2.Swap_1 (6 ms)
+[ RUN      ] TestDeque/2.Swap_2
+[       OK ] TestDeque/2.Swap_2 (5 ms)
+[ RUN      ] TestDeque/2.Swap_3
+[       OK ] TestDeque/2.Swap_3 (5 ms)
+[ RUN      ] TestDeque/2.Swap_4
+[       OK ] TestDeque/2.Swap_4 (4 ms)
+[ RUN      ] TestDeque/2.Equality_1
+[       OK ] TestDeque/2.Equality_1 (6 ms)
+[ RUN      ] TestDeque/2.Equality_2
+[       OK ] TestDeque/2.Equality_2 (4 ms)
+[ RUN      ] TestDeque/2.Equality_3
+[       OK ] TestDeque/2.Equality_3 (3 ms)
+[ RUN      ] TestDeque/2.Less_Than_1
+[       OK ] TestDeque/2.Less_Than_1 (6 ms)
+[ RUN      ] TestDeque/2.Less_Than_2
+[       OK ] TestDeque/2.Less_Than_2 (4 ms)
+[ RUN      ] TestDeque/2.Less_Than_3
+[       OK ] TestDeque/2.Less_Than_3 (5 ms)
+[ RUN      ] TestDeque/2.I_Equals_1
+[       OK ] TestDeque/2.I_Equals_1 (3 ms)
+[ RUN      ] TestDeque/2.I_Equals_2
+[       OK ] TestDeque/2.I_Equals_2 (3 ms)
+[ RUN      ] TestDeque/2.I_Equals_3
+[       OK ] TestDeque/2.I_Equals_3 (4 ms)
+[ RUN      ] TestDeque/2.I_Not_Equals_1
+[       OK ] TestDeque/2.I_Not_Equals_1 (4 ms)
+[ RUN      ] TestDeque/2.I_Not_Equals_2
+[       OK ] TestDeque/2.I_Not_Equals_2 (3 ms)
+[ RUN      ] TestDeque/2.I_Not_Equals_3
+[       OK ] TestDeque/2.I_Not_Equals_3 (3 ms)
+[ RUN      ] TestDeque/2.I_Plus_1
+[       OK ] TestDeque/2.I_Plus_1 (3 ms)
+[ RUN      ] TestDeque/2.I_Plus_2
+[       OK ] TestDeque/2.I_Plus_2 (3 ms)
+[ RUN      ] TestDeque/2.I_Plus_3
+[       OK ] TestDeque/2.I_Plus_3 (4 ms)
+[ RUN      ] TestDeque/2.I_Minus_1
+[       OK ] TestDeque/2.I_Minus_1 (3 ms)
+[ RUN      ] TestDeque/2.I_Minus_2
+[       OK ] TestDeque/2.I_Minus_2 (3 ms)
+[ RUN      ] TestDeque/2.I_Minus_3
+[       OK ] TestDeque/2.I_Minus_3 (4 ms)
+[ RUN      ] TestDeque/2.I_Dereference_1
+[       OK ] TestDeque/2.I_Dereference_1 (3 ms)
+[ RUN      ] TestDeque/2.I_Dereference_2
+[       OK ] TestDeque/2.I_Dereference_2 (3 ms)
+[ RUN      ] TestDeque/2.I_Dereference_3
+[       OK ] TestDeque/2.I_Dereference_3 (3 ms)
+[ RUN      ] TestDeque/2.I_Increment_1
+[       OK ] TestDeque/2.I_Increment_1 (3 ms)
+[ RUN      ] TestDeque/2.I_Increment_2
+[       OK ] TestDeque/2.I_Increment_2 (3 ms)
+[ RUN      ] TestDeque/2.I_Increment_3
+[       OK ] TestDeque/2.I_Increment_3 (3 ms)
+[ RUN      ] TestDeque/2.I_Decrement_1
+[       OK ] TestDeque/2.I_Decrement_1 (3 ms)
+[ RUN      ] TestDeque/2.I_Decrement_2
+[       OK ] TestDeque/2.I_Decrement_2 (4 ms)
+[ RUN      ] TestDeque/2.I_Plus_Equals_1
+[       OK ] TestDeque/2.I_Plus_Equals_1 (4 ms)
+[ RUN      ] TestDeque/2.I_Plus_Equals_2
+[       OK ] TestDeque/2.I_Plus_Equals_2 (3 ms)
+[ RUN      ] TestDeque/2.I_Plus_Equals_3
+[       OK ] TestDeque/2.I_Plus_Equals_3 (5 ms)
+[ RUN      ] TestDeque/2.I_Minus_Equals_1
+[       OK ] TestDeque/2.I_Minus_Equals_1 (3 ms)
+[ RUN      ] TestDeque/2.I_Minus_Equals_2
+[       OK ] TestDeque/2.I_Minus_Equals_2 (3 ms)
+[ RUN      ] TestDeque/2.I_Minus_Equals_3
+[       OK ] TestDeque/2.I_Minus_Equals_3 (5 ms)
+[ RUN      ] TestDeque/2.CI_Equals_1
+[       OK ] TestDeque/2.CI_Equals_1 (3 ms)
+[ RUN      ] TestDeque/2.CI_Equals_2
+[       OK ] TestDeque/2.CI_Equals_2 (3 ms)
+[ RUN      ] TestDeque/2.CI_Equals_3
+[       OK ] TestDeque/2.CI_Equals_3 (3 ms)
+[ RUN      ] TestDeque/2.CI_Not_Equals_1
+[       OK ] TestDeque/2.CI_Not_Equals_1 (4 ms)
+[ RUN      ] TestDeque/2.CI_Not_Equals_2
+[       OK ] TestDeque/2.CI_Not_Equals_2 (3 ms)
+[ RUN      ] TestDeque/2.CI_Not_Equals_3
+[       OK ] TestDeque/2.CI_Not_Equals_3 (3 ms)
+[ RUN      ] TestDeque/2.CI_Plus_1
+[       OK ] TestDeque/2.CI_Plus_1 (3 ms)
+[ RUN      ] TestDeque/2.CI_Plus_2
+[       OK ] TestDeque/2.CI_Plus_2 (3 ms)
+[ RUN      ] TestDeque/2.CI_Plus_3
+[       OK ] TestDeque/2.CI_Plus_3 (3 ms)
+[ RUN      ] TestDeque/2.CI_Minus_1
+[       OK ] TestDeque/2.CI_Minus_1 (3 ms)
+[ RUN      ] TestDeque/2.CI_Minus_2
+[       OK ] TestDeque/2.CI_Minus_2 (4 ms)
+[ RUN      ] TestDeque/2.CI_Minus_3
+[       OK ] TestDeque/2.CI_Minus_3 (3 ms)
+[ RUN      ] TestDeque/2.CI_Dereference_1
+[       OK ] TestDeque/2.CI_Dereference_1 (3 ms)
+[ RUN      ] TestDeque/2.CI_Dereference_2
+[       OK ] TestDeque/2.CI_Dereference_2 (3 ms)
+[ RUN      ] TestDeque/2.CI_Dereference_3
+[       OK ] TestDeque/2.CI_Dereference_3 (3 ms)
+[ RUN      ] TestDeque/2.CI_Increment_1
+[       OK ] TestDeque/2.CI_Increment_1 (3 ms)
+[ RUN      ] TestDeque/2.CI_Increment_2
+[       OK ] TestDeque/2.CI_Increment_2 (3 ms)
+[ RUN      ] TestDeque/2.CI_Increment_3
+[       OK ] TestDeque/2.CI_Increment_3 (3 ms)
+[ RUN      ] TestDeque/2.CI_Decrement_1
+[       OK ] TestDeque/2.CI_Decrement_1 (3 ms)
+[ RUN      ] TestDeque/2.CI_Decrement_2
+[       OK ] TestDeque/2.CI_Decrement_2 (3 ms)
+[ RUN      ] TestDeque/2.CI_Plus_Equals_1
+[       OK ] TestDeque/2.CI_Plus_Equals_1 (4 ms)
+[ RUN      ] TestDeque/2.CI_Plus_Equals_2
+[       OK ] TestDeque/2.CI_Plus_Equals_2 (3 ms)
+[ RUN      ] TestDeque/2.CI_Plus_Equals_3
+[       OK ] TestDeque/2.CI_Plus_Equals_3 (3 ms)
+[ RUN      ] TestDeque/2.CI_Minus_Equals_1
+[       OK ] TestDeque/2.CI_Minus_Equals_1 (4 ms)
+[ RUN      ] TestDeque/2.CI_Minus_Equals_2
+[       OK ] TestDeque/2.CI_Minus_Equals_2 (3 ms)
+[ RUN      ] TestDeque/2.CI_Minus_Equals_3
+[       OK ] TestDeque/2.CI_Minus_Equals_3 (3 ms)
+[----------] 135 tests from TestDeque/2 (515 ms total)
+
+[----------] 135 tests from TestDeque/3, where TypeParam = my_deque<double, std::allocator<double> >
+[ RUN      ] TestDeque/3.Empty_1
+[       OK ] TestDeque/3.Empty_1 (4 ms)
+[ RUN      ] TestDeque/3.Empty_2
+[       OK ] TestDeque/3.Empty_2 (3 ms)
+[ RUN      ] TestDeque/3.Empty_3
+[       OK ] TestDeque/3.Empty_3 (13 ms)
+[ RUN      ] TestDeque/3.Empty_4
+[       OK ] TestDeque/3.Empty_4 (6 ms)
+[ RUN      ] TestDeque/3.Assignment_1
+[       OK ] TestDeque/3.Assignment_1 (12 ms)
+[ RUN      ] TestDeque/3.Assignment_2
+[       OK ] TestDeque/3.Assignment_2 (8 ms)
+[ RUN      ] TestDeque/3.Assignment_3
+[       OK ] TestDeque/3.Assignment_3 (6 ms)
+[ RUN      ] TestDeque/3.Assignment_4
+[       OK ] TestDeque/3.Assignment_4 (5 ms)
+[ RUN      ] TestDeque/3.Indexing_1
+[       OK ] TestDeque/3.Indexing_1 (3 ms)
+[ RUN      ] TestDeque/3.Indexing_2
+[       OK ] TestDeque/3.Indexing_2 (5 ms)
+[ RUN      ] TestDeque/3.Indexing_3
+[       OK ] TestDeque/3.Indexing_3 (5 ms)
+[ RUN      ] TestDeque/3.Indexing_4
+[       OK ] TestDeque/3.Indexing_4 (3 ms)
+[ RUN      ] TestDeque/3.Indexing_5
+[       OK ] TestDeque/3.Indexing_5 (3 ms)
+[ RUN      ] TestDeque/3.At_1
+[       OK ] TestDeque/3.At_1 (3 ms)
+[ RUN      ] TestDeque/3.At_2
+[       OK ] TestDeque/3.At_2 (3 ms)
+[ RUN      ] TestDeque/3.At_3
+[       OK ] TestDeque/3.At_3 (9 ms)
+[ RUN      ] TestDeque/3.At_4
+[       OK ] TestDeque/3.At_4 (3 ms)
+[ RUN      ] TestDeque/3.Back_1
+[       OK ] TestDeque/3.Back_1 (4 ms)
+[ RUN      ] TestDeque/3.Back_2
+[       OK ] TestDeque/3.Back_2 (2 ms)
+[ RUN      ] TestDeque/3.Back_3
+[       OK ] TestDeque/3.Back_3 (3 ms)
+[ RUN      ] TestDeque/3.Back_4
+[       OK ] TestDeque/3.Back_4 (2 ms)
+[ RUN      ] TestDeque/3.Begin_1
+[       OK ] TestDeque/3.Begin_1 (3 ms)
+[ RUN      ] TestDeque/3.Begin_2
+[       OK ] TestDeque/3.Begin_2 (2 ms)
+[ RUN      ] TestDeque/3.Begin_3
+[       OK ] TestDeque/3.Begin_3 (2 ms)
+[ RUN      ] TestDeque/3.Begin_4
+[       OK ] TestDeque/3.Begin_4 (4 ms)
+[ RUN      ] TestDeque/3.Begin_5
+[       OK ] TestDeque/3.Begin_5 (3 ms)
+[ RUN      ] TestDeque/3.Clear_1
+[       OK ] TestDeque/3.Clear_1 (2 ms)
+[ RUN      ] TestDeque/3.Clear_2
+[       OK ] TestDeque/3.Clear_2 (3 ms)
+[ RUN      ] TestDeque/3.Clear_3
+[       OK ] TestDeque/3.Clear_3 (3 ms)
+[ RUN      ] TestDeque/3.Clear_4
+[       OK ] TestDeque/3.Clear_4 (3 ms)
+[ RUN      ] TestDeque/3.End_1
+[       OK ] TestDeque/3.End_1 (3 ms)
+[ RUN      ] TestDeque/3.End_2
+[       OK ] TestDeque/3.End_2 (2 ms)
+[ RUN      ] TestDeque/3.End_3
+[       OK ] TestDeque/3.End_3 (6 ms)
+[ RUN      ] TestDeque/3.End_4
+[       OK ] TestDeque/3.End_4 (4 ms)
+[ RUN      ] TestDeque/3.End_5
+[       OK ] TestDeque/3.End_5 (2 ms)
+[ RUN      ] TestDeque/3.Erase_1
+[       OK ] TestDeque/3.Erase_1 (4 ms)
+[ RUN      ] TestDeque/3.Erase_2
+[       OK ] TestDeque/3.Erase_2 (2 ms)
+[ RUN      ] TestDeque/3.Erase_3
+[       OK ] TestDeque/3.Erase_3 (3 ms)
+[ RUN      ] TestDeque/3.Erase_4
+[       OK ] TestDeque/3.Erase_4 (3 ms)
+[ RUN      ] TestDeque/3.Front_1
+[       OK ] TestDeque/3.Front_1 (3 ms)
+[ RUN      ] TestDeque/3.Front_2
+[       OK ] TestDeque/3.Front_2 (3 ms)
+[ RUN      ] TestDeque/3.Front_3
+[       OK ] TestDeque/3.Front_3 (2 ms)
+[ RUN      ] TestDeque/3.Front_4
+[       OK ] TestDeque/3.Front_4 (2 ms)
+[ RUN      ] TestDeque/3.Insert_1
+[       OK ] TestDeque/3.Insert_1 (5 ms)
+[ RUN      ] TestDeque/3.Insert_2
+[       OK ] TestDeque/3.Insert_2 (3 ms)
+[ RUN      ] TestDeque/3.Insert_3
+[       OK ] TestDeque/3.Insert_3 (3 ms)
+[ RUN      ] TestDeque/3.Insert_4
+[       OK ] TestDeque/3.Insert_4 (3 ms)
+[ RUN      ] TestDeque/3.Pop_Back_1
+[       OK ] TestDeque/3.Pop_Back_1 (3 ms)
+[ RUN      ] TestDeque/3.Pop_Back_2
+[       OK ] TestDeque/3.Pop_Back_2 (3 ms)
+[ RUN      ] TestDeque/3.Pop_Back_3
+[       OK ] TestDeque/3.Pop_Back_3 (4 ms)
+[ RUN      ] TestDeque/3.Pop_Back_4
+[       OK ] TestDeque/3.Pop_Back_4 (3 ms)
+[ RUN      ] TestDeque/3.Pop_Font_1
+[       OK ] TestDeque/3.Pop_Font_1 (2 ms)
+[ RUN      ] TestDeque/3.Pop_Font_2
+[       OK ] TestDeque/3.Pop_Font_2 (3 ms)
+[ RUN      ] TestDeque/3.Pop_Font_3
+[       OK ] TestDeque/3.Pop_Font_3 (4 ms)
+[ RUN      ] TestDeque/3.Pop_Font_4
+[       OK ] TestDeque/3.Pop_Font_4 (4 ms)
+[ RUN      ] TestDeque/3.Push_Back_1
+[       OK ] TestDeque/3.Push_Back_1 (3 ms)
+[ RUN      ] TestDeque/3.Push_Back_2
+[       OK ] TestDeque/3.Push_Back_2 (3 ms)
+[ RUN      ] TestDeque/3.Push_Back_3
+[       OK ] TestDeque/3.Push_Back_3 (3 ms)
+[ RUN      ] TestDeque/3.Push_Back_4
+[       OK ] TestDeque/3.Push_Back_4 (4 ms)
+[ RUN      ] TestDeque/3.Push_Front_1
+[       OK ] TestDeque/3.Push_Front_1 (3 ms)
+[ RUN      ] TestDeque/3.Push_Font_2
+[       OK ] TestDeque/3.Push_Font_2 (3 ms)
+[ RUN      ] TestDeque/3.Push_Font_3
+[       OK ] TestDeque/3.Push_Font_3 (4 ms)
+[ RUN      ] TestDeque/3.Push_Font_4
+[       OK ] TestDeque/3.Push_Font_4 (4 ms)
+[ RUN      ] TestDeque/3.Resize_1
+[       OK ] TestDeque/3.Resize_1 (3 ms)
+[ RUN      ] TestDeque/3.Resize_2
+[       OK ] TestDeque/3.Resize_2 (5 ms)
+[ RUN      ] TestDeque/3.Resize_3
+[       OK ] TestDeque/3.Resize_3 (3 ms)
+[ RUN      ] TestDeque/3.Resize_4
+[       OK ] TestDeque/3.Resize_4 (2 ms)
+[ RUN      ] TestDeque/3.Size_1
+[       OK ] TestDeque/3.Size_1 (3 ms)
+[ RUN      ] TestDeque/3.Size_2
+[       OK ] TestDeque/3.Size_2 (2 ms)
+[ RUN      ] TestDeque/3.Size_3
+[       OK ] TestDeque/3.Size_3 (2 ms)
+[ RUN      ] TestDeque/3.Size_4
+[       OK ] TestDeque/3.Size_4 (2 ms)
+[ RUN      ] TestDeque/3.Size_5
+[       OK ] TestDeque/3.Size_5 (2 ms)
+[ RUN      ] TestDeque/3.Size_6
+[       OK ] TestDeque/3.Size_6 (3 ms)
+[ RUN      ] TestDeque/3.Swap_1
+[       OK ] TestDeque/3.Swap_1 (5 ms)
+[ RUN      ] TestDeque/3.Swap_2
+[       OK ] TestDeque/3.Swap_2 (4 ms)
+[ RUN      ] TestDeque/3.Swap_3
+[       OK ] TestDeque/3.Swap_3 (5 ms)
+[ RUN      ] TestDeque/3.Swap_4
+[       OK ] TestDeque/3.Swap_4 (4 ms)
+[ RUN      ] TestDeque/3.Equality_1
+[       OK ] TestDeque/3.Equality_1 (6 ms)
+[ RUN      ] TestDeque/3.Equality_2
+[       OK ] TestDeque/3.Equality_2 (4 ms)
+[ RUN      ] TestDeque/3.Equality_3
+[       OK ] TestDeque/3.Equality_3 (4 ms)
+[ RUN      ] TestDeque/3.Less_Than_1
+[       OK ] TestDeque/3.Less_Than_1 (6 ms)
+[ RUN      ] TestDeque/3.Less_Than_2
+[       OK ] TestDeque/3.Less_Than_2 (4 ms)
+[ RUN      ] TestDeque/3.Less_Than_3
+[       OK ] TestDeque/3.Less_Than_3 (5 ms)
+[ RUN      ] TestDeque/3.I_Equals_1
+[       OK ] TestDeque/3.I_Equals_1 (3 ms)
+[ RUN      ] TestDeque/3.I_Equals_2
+[       OK ] TestDeque/3.I_Equals_2 (3 ms)
+[ RUN      ] TestDeque/3.I_Equals_3
+[       OK ] TestDeque/3.I_Equals_3 (3 ms)
+[ RUN      ] TestDeque/3.I_Not_Equals_1
+[       OK ] TestDeque/3.I_Not_Equals_1 (3 ms)
+[ RUN      ] TestDeque/3.I_Not_Equals_2
+[       OK ] TestDeque/3.I_Not_Equals_2 (3 ms)
+[ RUN      ] TestDeque/3.I_Not_Equals_3
+[       OK ] TestDeque/3.I_Not_Equals_3 (3 ms)
+[ RUN      ] TestDeque/3.I_Plus_1
+[       OK ] TestDeque/3.I_Plus_1 (3 ms)
+[ RUN      ] TestDeque/3.I_Plus_2
+[       OK ] TestDeque/3.I_Plus_2 (3 ms)
+[ RUN      ] TestDeque/3.I_Plus_3
+[       OK ] TestDeque/3.I_Plus_3 (4 ms)
+[ RUN      ] TestDeque/3.I_Minus_1
+[       OK ] TestDeque/3.I_Minus_1 (3 ms)
+[ RUN      ] TestDeque/3.I_Minus_2
+[       OK ] TestDeque/3.I_Minus_2 (3 ms)
+[ RUN      ] TestDeque/3.I_Minus_3
+[       OK ] TestDeque/3.I_Minus_3 (3 ms)
+[ RUN      ] TestDeque/3.I_Dereference_1
+[       OK ] TestDeque/3.I_Dereference_1 (2 ms)
+[ RUN      ] TestDeque/3.I_Dereference_2
+[       OK ] TestDeque/3.I_Dereference_2 (3 ms)
+[ RUN      ] TestDeque/3.I_Dereference_3
+[       OK ] TestDeque/3.I_Dereference_3 (2 ms)
+[ RUN      ] TestDeque/3.I_Increment_1
+[       OK ] TestDeque/3.I_Increment_1 (3 ms)
+[ RUN      ] TestDeque/3.I_Increment_2
+[       OK ] TestDeque/3.I_Increment_2 (2 ms)
+[ RUN      ] TestDeque/3.I_Increment_3
+[       OK ] TestDeque/3.I_Increment_3 (2 ms)
+[ RUN      ] TestDeque/3.I_Decrement_1
+[       OK ] TestDeque/3.I_Decrement_1 (3 ms)
+[ RUN      ] TestDeque/3.I_Decrement_2
+[       OK ] TestDeque/3.I_Decrement_2 (4 ms)
+[ RUN      ] TestDeque/3.I_Plus_Equals_1
+[       OK ] TestDeque/3.I_Plus_Equals_1 (3 ms)
+[ RUN      ] TestDeque/3.I_Plus_Equals_2
+[       OK ] TestDeque/3.I_Plus_Equals_2 (3 ms)
+[ RUN      ] TestDeque/3.I_Plus_Equals_3
+[       OK ] TestDeque/3.I_Plus_Equals_3 (5 ms)
+[ RUN      ] TestDeque/3.I_Minus_Equals_1
+[       OK ] TestDeque/3.I_Minus_Equals_1 (3 ms)
+[ RUN      ] TestDeque/3.I_Minus_Equals_2
+[       OK ] TestDeque/3.I_Minus_Equals_2 (3 ms)
+[ RUN      ] TestDeque/3.I_Minus_Equals_3
+[       OK ] TestDeque/3.I_Minus_Equals_3 (4 ms)
+[ RUN      ] TestDeque/3.CI_Equals_1
+[       OK ] TestDeque/3.CI_Equals_1 (3 ms)
+[ RUN      ] TestDeque/3.CI_Equals_2
+[       OK ] TestDeque/3.CI_Equals_2 (3 ms)
+[ RUN      ] TestDeque/3.CI_Equals_3
+[       OK ] TestDeque/3.CI_Equals_3 (3 ms)
+[ RUN      ] TestDeque/3.CI_Not_Equals_1
+[       OK ] TestDeque/3.CI_Not_Equals_1 (4 ms)
+[ RUN      ] TestDeque/3.CI_Not_Equals_2
+[       OK ] TestDeque/3.CI_Not_Equals_2 (2 ms)
+[ RUN      ] TestDeque/3.CI_Not_Equals_3
+[       OK ] TestDeque/3.CI_Not_Equals_3 (2 ms)
+[ RUN      ] TestDeque/3.CI_Plus_1
+[       OK ] TestDeque/3.CI_Plus_1 (2 ms)
+[ RUN      ] TestDeque/3.CI_Plus_2
+[       OK ] TestDeque/3.CI_Plus_2 (2 ms)
+[ RUN      ] TestDeque/3.CI_Plus_3
+[       OK ] TestDeque/3.CI_Plus_3 (3 ms)
+[ RUN      ] TestDeque/3.CI_Minus_1
+[       OK ] TestDeque/3.CI_Minus_1 (3 ms)
+[ RUN      ] TestDeque/3.CI_Minus_2
+[       OK ] TestDeque/3.CI_Minus_2 (4 ms)
+[ RUN      ] TestDeque/3.CI_Minus_3
+[       OK ] TestDeque/3.CI_Minus_3 (3 ms)
+[ RUN      ] TestDeque/3.CI_Dereference_1
+[       OK ] TestDeque/3.CI_Dereference_1 (3 ms)
+[ RUN      ] TestDeque/3.CI_Dereference_2
+[       OK ] TestDeque/3.CI_Dereference_2 (3 ms)
+[ RUN      ] TestDeque/3.CI_Dereference_3
+[       OK ] TestDeque/3.CI_Dereference_3 (2 ms)
+[ RUN      ] TestDeque/3.CI_Increment_1
+[       OK ] TestDeque/3.CI_Increment_1 (3 ms)
+[ RUN      ] TestDeque/3.CI_Increment_2
+[       OK ] TestDeque/3.CI_Increment_2 (2 ms)
+[ RUN      ] TestDeque/3.CI_Increment_3
+[       OK ] TestDeque/3.CI_Increment_3 (2 ms)
+[ RUN      ] TestDeque/3.CI_Decrement_1
+[       OK ] TestDeque/3.CI_Decrement_1 (3 ms)
+[ RUN      ] TestDeque/3.CI_Decrement_2
+[       OK ] TestDeque/3.CI_Decrement_2 (3 ms)
+[ RUN      ] TestDeque/3.CI_Plus_Equals_1
+[       OK ] TestDeque/3.CI_Plus_Equals_1 (3 ms)
+[ RUN      ] TestDeque/3.CI_Plus_Equals_2
+[       OK ] TestDeque/3.CI_Plus_Equals_2 (3 ms)
+[ RUN      ] TestDeque/3.CI_Plus_Equals_3
+[       OK ] TestDeque/3.CI_Plus_Equals_3 (3 ms)
+[ RUN      ] TestDeque/3.CI_Minus_Equals_1
+[       OK ] TestDeque/3.CI_Minus_Equals_1 (3 ms)
+[ RUN      ] TestDeque/3.CI_Minus_Equals_2
+[       OK ] TestDeque/3.CI_Minus_Equals_2 (3 ms)
+[ RUN      ] TestDeque/3.CI_Minus_Equals_3
+[       OK ] TestDeque/3.CI_Minus_Equals_3 (3 ms)
+[----------] 135 tests from TestDeque/3 (486 ms total)
+
+[----------] Global test environment tear-down
+[==========] 540 tests from 4 test cases ran. (2058 ms total)
+[  PASSED  ] 540 tests.
+
+==20251== Memcheck, a memory error detector
+==20251== Copyright (C) 2002-2011, and GNU GPL'd, by Julian Seward et al.
+==20251== Using Valgrind-3.7.0 and LibVEX; rerun with -h for copyright info
+==20251== Command: ./TestDeque
+==20251== 
+==20251== 
+==20251== HEAP SUMMARY:
+==20251==     in use at exit: 0 bytes in 0 blocks
+==20251==   total heap usage: 23,125 allocs, 23,125 frees, 1,522,767 bytes allocated
+==20251== 
+==20251== All heap blocks were freed -- no leaks are possible
+==20251== 
+==20251== For counts of detected and suppressed errors, rerun with: -v
+==20251== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 2 from 2)
+
+File 'TestDeque.c++'
+Lines executed:100.00% of 718
+Branches executed:60.69% of 18072
+Taken at least once:30.35% of 18072
+Calls executed:49.89% of 15940
+Creating 'TestDeque.c++.gcov'
+
+File '/usr/include/c++/4.7/bits/stl_algobase.h'
+Lines executed:75.26% of 97
+Branches executed:73.33% of 180
+Taken at least once:50.00% of 180
+Calls executed:67.58% of 364
+Creating 'stl_algobase.h.gcov'
+
+File '/usr/include/c++/4.7/bits/stl_iterator.h'
+Lines executed:0.00% of 7
+No branches
+Calls executed:0.00% of 10
+Creating 'stl_iterator.h.gcov'
+
+File '/usr/include/c++/4.7/bits/stl_iterator_base_types.h'
+Lines executed:57.14% of 7
+No branches
+Calls executed:50.00% of 4
+Creating 'stl_iterator_base_types.h.gcov'
+
+File '/usr/include/c++/4.7/ostream'
+No executable lines
+No branches
+No calls
+Removing 'ostream.gcov'
+
+File '/usr/include/gtest/gtest-printers.h'
+Lines executed:0.00% of 25
+Branches executed:0.00% of 40
+Taken at least once:0.00% of 40
+Calls executed:0.00% of 56
+Creating 'gtest-printers.h.gcov'
+
+File '/usr/include/c++/4.7/bits/stl_uninitialized.h'
+Lines executed:60.00% of 35
+Branches executed:36.84% of 76
+Taken at least once:18.42% of 76
+Calls executed:27.63% of 152
+Creating 'stl_uninitialized.h.gcov'
+
+File '/usr/include/gtest/internal/gtest-internal.h'
+Lines executed:86.67% of 15
+Branches executed:83.31% of 6484
+Taken at least once:41.66% of 6484
+Calls executed:62.95% of 14586
+Creating 'gtest-internal.h.gcov'
+
+File '/usr/include/c++/4.7/bits/stl_iterator_base_funcs.h'
+Lines executed:36.36% of 11
+Branches executed:0.00% of 4
+Taken at least once:0.00% of 4
+Calls executed:37.50% of 16
+Creating 'stl_iterator_base_funcs.h.gcov'
+
+File '/usr/include/c++/4.7/bits/basic_string.h'
+Lines executed:0.00% of 5
+Branches executed:0.00% of 4
+Taken at least once:0.00% of 4
+Calls executed:0.00% of 5
+Creating 'basic_string.h.gcov'
+
+File '/usr/include/c++/4.7/streambuf'
+No executable lines
+No branches
+No calls
+Removing 'streambuf.gcov'
+
+File '/usr/include/c++/4.7/bits/deque.tcc'
+Lines executed:47.43% of 253
+Branches executed:48.06% of 412
+Taken at least once:29.13% of 412
+Calls executed:41.17% of 566
+Creating 'deque.tcc.gcov'
+
+File '/usr/include/c++/4.7/sstream'
+Lines executed:0.00% of 1
+Branches executed:0.00% of 2
+Taken at least once:0.00% of 2
+Calls executed:0.00% of 5
+Creating 'sstream.gcov'
+
+File '/usr/include/c++/4.7/bits/stl_deque.h'
+Lines executed:92.03% of 251
+Branches executed:93.00% of 200
+Taken at least once:57.50% of 200
+Calls executed:75.06% of 429
+Creating 'stl_deque.h.gcov'
+
+File '/usr/include/c++/4.7/bits/stl_construct.h'
+Lines executed:0.00% of 7
+Branches executed:0.00% of 4
+Taken at least once:0.00% of 4
+Calls executed:0.00% of 14
+Creating 'stl_construct.h.gcov'
+
+File '/usr/include/c++/4.7/bits/allocator.h'
+Lines executed:100.00% of 8
+No branches
+Calls executed:92.31% of 13
+Creating 'allocator.h.gcov'
+
+File '/usr/include/c++/4.7/ext/new_allocator.h'
+Lines executed:92.86% of 14
+Branches executed:100.00% of 20
+Taken at least once:50.00% of 20
+Calls executed:82.76% of 29
+Creating 'new_allocator.h.gcov'
+
+File '/usr/include/c++/4.7/bits/move.h'
+Lines executed:100.00% of 9
+No branches
+Calls executed:100.00% of 23
+Creating 'move.h.gcov'
+
+File '/usr/include/gtest/gtest.h'
+Lines executed:50.00% of 24
+Branches executed:22.22% of 54
+Taken at least once:11.11% of 54
+Calls executed:16.19% of 105
+Creating 'gtest.h.gcov'
+
+File '/usr/include/c++/4.7/bits/basic_ios.h'
+Lines executed:0.00% of 4
+Branches executed:0.00% of 2
+Taken at least once:0.00% of 2
+Calls executed:0.00% of 1
+Creating 'basic_ios.h.gcov'
+
+File 'Deque.h'
+Lines executed:91.50% of 341
+Branches executed:92.00% of 700
+Taken at least once:54.86% of 700
+Calls executed:67.11% of 760
+Creating 'Deque.h.gcov'
+
+File '/usr/include/c++/4.7/bits/stl_algo.h'
+Lines executed:100.00% of 6
+Branches executed:100.00% of 16
+Taken at least once:75.00% of 16
+Calls executed:100.00% of 12
+Creating 'stl_algo.h.gcov'
+
+File '/usr/include/gtest/internal/gtest-port.h'
+Lines executed:29.41% of 17
+Branches executed:7.14% of 28
+Taken at least once:3.57% of 28
+Calls executed:3.85% of 26
+Creating 'gtest-port.h.gcov'
+
+File '/usr/include/gtest/internal/gtest-param-util.h'
+Lines executed:0.00% of 29
+Branches executed:0.00% of 34
+Taken at least once:0.00% of 34
+Calls executed:0.00% of 60
+Creating 'gtest-param-util.h.gcov'
+
+File '/usr/include/c++/4.7/bits/stl_bvector.h'
+Lines executed:0.00% of 32
+Branches executed:0.00% of 10
+Taken at least once:0.00% of 10
+Calls executed:0.00% of 14
+Creating 'stl_bvector.h.gcov'
+
+File '/usr/include/c++/4.7/iostream'
+Lines executed:100.00% of 1
+No branches
+Calls executed:100.00% of 2
+Creating 'iostream.gcov'
+
+File '/usr/include/c++/4.7/ext/concurrence.h'
+Lines executed:0.00% of 12
+Branches executed:0.00% of 8
+Taken at least once:0.00% of 8
+Calls executed:0.00% of 16
+Creating 'concurrence.h.gcov'
+
+File '/usr/include/c++/4.7/ext/type_traits.h'
+Lines executed:0.00% of 2
+No branches
+No calls
+Creating 'type_traits.h.gcov'
+
+File '/usr/include/gtest/internal/gtest-type-util.h'
+Lines executed:100.00% of 7
+Branches executed:100.00% of 24
+Taken at least once:50.00% of 24
+Calls executed:75.00% of 16
+Creating 'gtest-type-util.h.gcov'
+
+File '/usr/include/c++/4.7/bits/basic_string.tcc'
+Lines executed:0.00% of 16
+Branches executed:0.00% of 16
+Taken at least once:0.00% of 16
+Calls executed:0.00% of 20
+Creating 'basic_string.tcc.gcov'
+
+File '/usr/include/c++/4.7/istream'
+No executable lines
+No branches
+No calls
+Removing 'istream.gcov'
+
+File '/usr/include/c++/4.7/iomanip'
+Lines executed:0.00% of 2
+No branches
+No calls
+Creating 'iomanip.gcov'
+
+File '/usr/include/gtest/gtest-message.h'
+Lines executed:0.00% of 4
+Branches executed:0.00% of 4
+Taken at least once:0.00% of 4
+Calls executed:0.00% of 12
+Creating 'gtest-message.h.gcov'
+
+File '/usr/include/gtest/gtest-test-part.h'
+Lines executed:0.00% of 1
+Branches executed:0.00% of 2
+Taken at least once:0.00% of 2
+Calls executed:0.00% of 3
+Creating 'gtest-test-part.h.gcov'
+
+File '/usr/include/gtest/internal/gtest-death-test-internal.h'
+Lines executed:0.00% of 2
+Branches executed:0.00% of 4
+Taken at least once:0.00% of 4
+Calls executed:0.00% of 6
+Creating 'gtest-death-test-internal.h.gcov'
+
+File '/usr/include/gtest/internal/gtest-string.h'
+Lines executed:61.90% of 21
+Branches executed:100.00% of 4
+Taken at least once:75.00% of 4
+Calls executed:42.86% of 7
+Creating 'gtest-string.h.gcov'
+
+File '/usr/include/c++/4.7/bits/locale_facets.h'
+Lines executed:0.00% of 5
+Branches executed:0.00% of 2
+Taken at least once:0.00% of 2
+Calls executed:0.00% of 2
+Creating 'locale_facets.h.gcov'
+
+File '/usr/include/c++/4.7/bits/ios_base.h'
+Lines executed:0.00% of 8
+No branches
+No calls
+Creating 'ios_base.h.gcov'
+
+File '/usr/include/c++/4.7/typeinfo'
+Lines executed:40.00% of 5
+Branches executed:25.00% of 8
+Taken at least once:12.50% of 8
+No calls
+Creating 'typeinfo.gcov'
+
+File '/usr/include/c++/4.7/ext/atomicity.h'
+Lines executed:0.00% of 10
+Branches executed:0.00% of 2
+Taken at least once:0.00% of 2
+Calls executed:0.00% of 3
+Creating 'atomicity.h.gcov'
+
+File '/usr/include/x86_64-linux-gnu/c++/4.7/bits/gthr-default.h'
+Lines executed:0.00% of 2
+No branches
+No calls
+Creating 'gthr-default.h.gcov'
+
+File '/usr/include/c++/4.7/bits/char_traits.h'
+Lines executed:0.00% of 6
+No branches
+No calls
+Creating 'char_traits.h.gcov'
+
+File '/usr/include/c++/4.7/new'
+Lines executed:100.00% of 2
+No branches
+No calls
+Creating 'new.gcov'
+
